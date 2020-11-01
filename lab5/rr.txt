@@ -1289,3 +1289,218 @@
 [129359.555158] [26192]  1000 26192    55622       34    65536       29             0 bash
 [129359.555389] Out of memory: Killed process 25972 (bash) total-vm:2605484kB, anon-rss:1652076kB, file-rss:0kB, shmem-rss:0kB, UID:1000
 [129359.647923] oom_reaper: reaped process 25972 (bash), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB
+[131870.983122] printk: systemd: 48 output lines suppressed due to ratelimiting
+[131870.997836] systemd[1]: systemd 239 (239-41.el8_3) running in system mode. (+PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=legacy)
+[131870.998580] systemd[1]: Detected virtualization oracle.
+[131870.998816] systemd[1]: Detected architecture x86-64.
+[131939.106629] SELinux:  Converting 2426 SID table entries...
+[131939.894928] SELinux:  Context system_u:unconfined_r:sandbox_t:s0-s0:c0.c1023 became invalid (unmapped).
+[131940.736639] SELinux:  Context unconfined_u:unconfined_r:sandbox_t:s0-s0:c0.c1023 became invalid (unmapped).
+[131940.799379] SELinux:  policy capability network_peer_controls=1
+[131940.799631] SELinux:  policy capability open_perms=1
+[131940.799869] SELinux:  policy capability extended_socket_class=1
+[131940.800189] SELinux:  policy capability always_check_network=0
+[131940.800473] SELinux:  policy capability cgroup_seclabel=1
+[131940.800701] SELinux:  policy capability nnp_nosuid_transition=1
+[133841.193501] bash invoked oom-killer: gfp_mask=0x6200ca(GFP_HIGHUSER_MOVABLE), nodemask=(null), order=0, oom_score_adj=0
+[133841.194097] bash cpuset=/ mems_allowed=0
+[133841.194286] CPU: 0 PID: 97810 Comm: bash Tainted: G                 ---------r-  - 4.18.0-193.el8.x86_64 #1
+[133841.194692] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[133841.194926] Call Trace:
+[133841.195221]  dump_stack+0x5c/0x80
+[133841.195473]  dump_header+0x6e/0x27a
+[133841.195771]  ? try_to_free_pages+0xe8/0x1c0
+[133841.195952]  oom_kill_process.cold.29+0xb/0x10
+[133841.196175]  out_of_memory+0x1ba/0x490
+[133841.196379]  __alloc_pages_slowpath+0xc18/0xd00
+[133841.196571]  __alloc_pages_nodemask+0x245/0x280
+[133841.196761]  alloc_pages_vma+0x74/0x1d0
+[133841.196952]  wp_page_copy+0x7b/0x500
+[133841.197144]  do_wp_page+0x8c/0x310
+[133841.197345]  ? do_fault+0x2c7/0x3c0
+[133841.197575]  __handle_mm_fault+0x66f/0x6a0
+[133841.197770]  handle_mm_fault+0xda/0x200
+[133841.197968]  __do_page_fault+0x22d/0x4e0
+[133841.198167]  do_page_fault+0x32/0x110
+[133841.198378]  ? page_fault+0x8/0x30
+[133841.198580]  page_fault+0x1e/0x30
+[133841.198783] RIP: 0033:0x7f23a10bb369
+[133841.198987] Code: ff ff 0f 1f 80 00 00 00 00 48 8d 34 58 0f b7 0e 66 85 c9 0f 84 46 ff ff ff 48 8d 04 d8 83 e9 01 48 8b 90 80 00 00 00 48 8b 3a <48> 89 b8 80 00 00 00 66 89 0e 48 c7 42 08 00 00 00 00 e9 70 ff ff
+[133841.199705] RSP: 002b:00007fff2f0b00d0 EFLAGS: 00010246
+[133841.199946] RAX: 00005599b32dd018 RBX: 0000000000000001 RCX: 0000000000000000
+[133841.200205] RDX: 00005599b32eb4d0 RSI: 00005599b32dd012 RDI: 0000000000000000
+[133841.200460] RBP: 0000000000000020 R08: 0000000000000000 R09: 00007f23a1a44740
+[133841.200717] R10: 0000000000000007 R11: 00005599b32ea120 R12: ffffffffffffffb0
+[133841.200978] R13: 00007fff2f0b01b0 R14: 00005599b271aed9 R15: 00005599b32e79a0
+[133841.201398] Mem-Info:
+[133841.201667] active_anon:314219 inactive_anon:105329 isolated_anon:0
+                 active_file:24 inactive_file:1605 isolated_file:0
+                 unevictable:0 dirty:0 writeback:0 unstable:0
+                 slab_reclaimable:7481 slab_unreclaimable:13235
+                 mapped:23 shmem:12 pagetables:3130 bounce:0
+                 free:13032 free_pcp:47 free_cma:0
+[133841.203370] Node 0 active_anon:1256876kB inactive_anon:421316kB active_file:96kB inactive_file:6420kB unevictable:0kB isolated(anon):0kB isolated(file):0kB mapped:92kB dirty:0kB writeback:0kB shmem:48kB shmem_thp: 0kB shmem_pmdmapped: 0kB anon_thp: 4096kB writeback_tmp:0kB unstable:0kB all_unreclaimable? no
+[133841.204444] Node 0 DMA free:7484kB min:376kB low:468kB high:560kB active_anon:7244kB inactive_anon:596kB active_file:0kB inactive_file:0kB unevictable:0kB writepending:0kB present:15992kB managed:15360kB mlocked:0kB kernel_stack:0kB pagetables:28kB bounce:0kB free_pcp:0kB local_pcp:0kB free_cma:0kB
+[133841.205718] lowmem_reserve[]: 0 1778 1778 1778 1778
+[133841.206048] Node 0 DMA32 free:44644kB min:44676kB low:55844kB high:67012kB active_anon:1249632kB inactive_anon:420720kB active_file:96kB inactive_file:6420kB unevictable:0kB writepending:0kB present:2080704kB managed:1855540kB mlocked:0kB kernel_stack:2124kB pagetables:12492kB bounce:0kB free_pcp:188kB local_pcp:188kB free_cma:0kB
+[133841.207418] lowmem_reserve[]: 0 0 0 0 0
+[133841.207767] Node 0 DMA: 1*4kB (U) 1*8kB (U) 1*16kB (U) 3*32kB (UM) 3*64kB (UM) 2*128kB (U) 1*256kB (M) 1*512kB (U) 0*1024kB 1*2048kB (M) 1*4096kB (E) = 7484kB
+[133841.208577] Node 0 DMA32: 477*4kB (UME) 808*8kB (UME) 465*16kB (UME) 335*32kB (UME) 157*64kB (UME) 51*128kB (UME) 2*256kB (ME) 0*512kB 1*1024kB (M) 0*2048kB 0*4096kB = 44644kB
+[133841.209524] Node 0 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=2048kB
+[133841.209941] 7755 total pagecache pages
+[133841.210345] 6101 pages in swap cache
+[133841.210738] Swap cache stats: add 1448911, delete 1442810, find 28760/46805
+[133841.211162] Free swap  = 0kB
+[133841.211549] Total swap = 839676kB
+[133841.211949] 524174 pages RAM
+[133841.212326] 0 pages HighMem/MovableOnly
+[133841.212702] 56449 pages reserved
+[133841.213091] 0 pages hwpoisoned
+[133841.213462] [ pid ]   uid  tgid total_vm      rss pgtables_bytes swapents oom_score_adj name
+[133841.213868] [  648]     0   648    23490       18   229376      277             0 systemd-journal
+[133841.214627] [  796]    32   796    16780        5   176128      174             0 rpcbind
+[133841.215030] [  799]     0   799    35350        0   159744      217         -1000 auditd
+[133841.215416] [  827]     0   827   115688        0   397312      517             0 ModemManager
+[133841.215899] [  830]    70   830    20686        5   159744      117             0 avahi-daemon
+[133841.216472] [  832]   998   832   406793        0   323584     1572             0 polkitd
+[133841.216919] [  833]    81   833    22366        0   172032      326          -900 dbus-daemon
+[133841.217366] [  835]   997   835     4718        7    69632       32             0 lsmd
+[133841.217762] [  842]   991   842    40057        0   196608      209             0 rngd
+[133841.218127] [  846]    70   846    20655        0   147456      108             0 avahi-daemon
+[133841.218482] [  867]     0   867    22601       21   217088      860             0 systemd-logind
+[133841.218849] [  883]     0   883   169522       88   397312      583             0 NetworkManager
+[133841.219191] [ 1115]     0  1115    10656        5   110592       47             0 atd
+[133841.219554] [ 1416]  1000  1416    23463        3   225280      365             0 systemd
+[133841.219899] [ 1421]  1000  1421    61716        0   315392     1339             0 (sd-pam)
+[133841.220222] [11714]     0 11714    33689        5   274432      236             0 login
+[133841.220538] [11715]     0 11715    56448        0    73728       28             0 agetty
+[133841.220865] [24664]  1000 24664    58653        0    86016      549             0 bash
+[133841.221165] [24813]  1000 24813    54296        0    61440       55             0 cat
+[133841.221454] [27511]     0 27511    30419        0   262144      222             0 login
+[133841.221753] [27516]     0 27516    23439        0   212992      355             0 systemd
+[133841.222036] [27519]     0 27519    58447       11   311296     1323             0 (sd-pam)
+[133841.222329] [27528]     0 27528    59083        1    94208      458             0 bash
+[133841.222595] [27724]     0 27724   165619        1   520192     6100             0 firewalld
+[133841.223013] [52264]     0 52264    33689        0   274432      232             0 login
+[133841.223380] [52269]  1000 52269    58919      258    94208      553             0 bash
+[133841.223637] [52447]     0 52447    61679       36   114688      192             0 crond
+[133841.223883] [54873]     0 54873    12130        0   143360       85         -1000 sedispatch
+[133841.224143] [58933]     0 58933    77882        0   188416      678             0 gssproxy
+[133841.224383] [58963]     0 58963    12657       14   139264      345             0 smartd
+[133841.224638] [58980]     0 58980   158830      128   446464     3597             0 tuned
+[133841.224882] [59113]     0 59113     4359       10    65536       28             0 mcelog
+[133841.225125] [64213]     0 64213    24112        8   229376      609         -1000 systemd-udevd
+[133841.225371] [64276]     0 64276    22735        1   196608      223         -1000 sshd
+[133841.225635] [72330]     0 72330   105575       23   442368      484             0 sssd
+[133841.225878] [72331]     0 72331   107422       25   446464      618             0 sssd_be
+[133841.226113] [72332]     0 72332   108444      358   479232       50             0 sssd_nss
+[133841.226344] [97809]  1000 97809    55623        1    73728       61             0 bash
+[133841.226663] [97810]  1000 97810    55623       32    73728       30             0 bash
+[133841.226920] [97811]  1000 97811   651306   411892  4857856   183846             0 bash
+[133841.227144] [97823]     0 97823    68787       99   159744       98             0 top
+[133841.227370] [98014]  1000 98014    55623       32    57344       30             0 bash
+[133841.227614] Out of memory: Killed process 97811 (bash) total-vm:2605224kB, anon-rss:1647568kB, file-rss:0kB, shmem-rss:0kB, UID:1000
+[134261.310947] free invoked oom-killer: gfp_mask=0x6200ca(GFP_HIGHUSER_MOVABLE), nodemask=(null), order=0, oom_score_adj=0
+[134261.311605] free cpuset=/ mems_allowed=0
+[134261.311842] CPU: 0 PID: 98712 Comm: free Tainted: G                 ---------r-  - 4.18.0-193.el8.x86_64 #1
+[134261.312483] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[134261.312714] Call Trace:
+[134261.312926]  dump_stack+0x5c/0x80
+[134261.313127]  dump_header+0x6e/0x27a
+[134261.313337]  ? try_to_free_pages+0xe8/0x1c0
+[134261.313529]  oom_kill_process.cold.29+0xb/0x10
+[134261.313712]  out_of_memory+0x1ba/0x490
+[134261.313907]  __alloc_pages_slowpath+0xc18/0xd00
+[134261.314096]  __alloc_pages_nodemask+0x245/0x280
+[134261.314294]  filemap_fault+0x3d0/0x860
+[134261.314486]  ? alloc_set_pte+0x203/0x480
+[134261.314677]  ? filemap_map_pages+0x1ed/0x3b0
+[134261.314882]  ext4_filemap_fault+0x2c/0x40 [ext4]
+[134261.315079]  __do_fault+0x38/0xc0
+[134261.315286]  do_fault+0x191/0x3c0
+[134261.315484]  __handle_mm_fault+0x441/0x6a0
+[134261.315739]  handle_mm_fault+0xda/0x200
+[134261.316062]  __do_page_fault+0x22d/0x4e0
+[134261.316330]  do_page_fault+0x32/0x110
+[134261.316537]  ? page_fault+0x8/0x30
+[134261.316743]  page_fault+0x1e/0x30
+[134261.316952] RIP: 0033:0x7f862a2b9800
+[134261.317174] Code: Bad RIP value.
+[134261.317385] RSP: 002b:00007ffe3a38ffd8 EFLAGS: 00010246
+[134261.317602] RAX: 00007f862a4b6468 RBX: 00007f862a29d6d8 RCX: 0000000000000000
+[134261.317829] RDX: 0000000000000009 RSI: 00007f8629781ce7 RDI: 00007f862a29d992
+[134261.318058] RBP: 000000000d696913 R08: 0000000000000467 R09: 00007f862a29d6d8
+[134261.318301] R10: 0000000000000000 R11: 00007f862a4bbed0 R12: 00007f862a4b58d0
+[134261.318537] R13: 0000000000000003 R14: 00007f862a29d418 R15: 000000007c8ad2ef
+[134261.318971] Mem-Info:
+[134261.319407] active_anon:314320 inactive_anon:105168 isolated_anon:0
+                 active_file:23 inactive_file:1729 isolated_file:0
+                 unevictable:0 dirty:0 writeback:0 unstable:0
+                 slab_reclaimable:7465 slab_unreclaimable:13211
+                 mapped:15 shmem:7 pagetables:3192 bounce:0
+                 free:13027 free_pcp:14 free_cma:0
+[134261.321126] Node 0 active_anon:1257280kB inactive_anon:420672kB active_file:92kB inactive_file:6916kB unevictable:0kB isolated(anon):0kB isolated(file):0kB mapped:60kB dirty:0kB writeback:0kB shmem:28kB shmem_thp: 0kB shmem_pmdmapped: 0kB anon_thp: 147456kB writeback_tmp:0kB unstable:0kB all_unreclaimable? no
+[134261.322101] Node 0 DMA free:7480kB min:376kB low:468kB high:560kB active_anon:7856kB inactive_anon:0kB active_file:0kB inactive_file:0kB unevictable:0kB writepending:0kB present:15992kB managed:15360kB mlocked:0kB kernel_stack:0kB pagetables:16kB bounce:0kB free_pcp:0kB local_pcp:0kB free_cma:0kB
+[134261.323216] lowmem_reserve[]: 0 1778 1778 1778 1778
+[134261.323506] Node 0 DMA32 free:44628kB min:44676kB low:55844kB high:67012kB active_anon:1249424kB inactive_anon:420672kB active_file:92kB inactive_file:6916kB unevictable:0kB writepending:0kB present:2080704kB managed:1855540kB mlocked:0kB kernel_stack:2176kB pagetables:12752kB bounce:0kB free_pcp:56kB local_pcp:56kB free_cma:0kB
+[134261.324777] lowmem_reserve[]: 0 0 0 0 0
+[134261.325142] Node 0 DMA: 2*4kB (U) 4*8kB (U) 3*16kB (UM) 1*32kB (U) 3*64kB (UM) 2*128kB (U) 1*256kB (M) 1*512kB (U) 0*1024kB 1*2048kB (M) 1*4096kB (E) = 7480kB
+[134261.325988] Node 0 DMA32: 357*4kB (E) 708*8kB (UE) 506*16kB (UE) 336*32kB (UME) 154*64kB (UME) 57*128kB (UME) 4*256kB (UE) 1*512kB (U) 0*1024kB 0*2048kB 0*4096kB = 44628kB
+[134261.326724] Node 0 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=2048kB
+[134261.327118] 7820 total pagecache pages
+[134261.327491] 6052 pages in swap cache
+[134261.327864] Swap cache stats: add 1635378, delete 1629326, find 29544/48724
+[134261.328269] Free swap  = 0kB
+[134261.328651] Total swap = 839676kB
+[134261.329048] 524174 pages RAM
+[134261.329459] 0 pages HighMem/MovableOnly
+[134261.329848] 56449 pages reserved
+[134261.330220] 0 pages hwpoisoned
+[134261.330590] [ pid ]   uid  tgid total_vm      rss pgtables_bytes swapents oom_score_adj name
+[134261.331007] [  648]     0   648    23490       21   229376      271             0 systemd-journal
+[134261.331768] [  796]    32   796    16780        5   176128      174             0 rpcbind
+[134261.332173] [  799]     0   799    35350        0   159744      222         -1000 auditd
+[134261.332560] [  827]     0   827   115688        0   397312      522             0 ModemManager
+[134261.333133] [  830]    70   830    20686        1   159744      121             0 avahi-daemon
+[134261.333654] [  832]   998   832   406793        0   323584     1561             0 polkitd
+[134261.334097] [  833]    81   833    22366        0   172032      314          -900 dbus-daemon
+[134261.334477] [  835]   997   835     4718        7    69632       32             0 lsmd
+[134261.334871] [  842]   991   842    40057        0   196608      209             0 rngd
+[134261.335235] [  846]    70   846    20655        1   147456      107             0 avahi-daemon
+[134261.335591] [  867]     0   867    22601       24   217088      857             0 systemd-logind
+[134261.335960] [  883]     0   883   169522       37   397312      634             0 NetworkManager
+[134261.336302] [ 1115]     0  1115    10656        1   110592       51             0 atd
+[134261.336635] [ 1416]  1000  1416    23463        0   225280      370             0 systemd
+[134261.336979] [ 1421]  1000  1421    61716        1   315392     1338             0 (sd-pam)
+[134261.337302] [11714]     0 11714    33689        5   274432      236             0 login
+[134261.337619] [11715]     0 11715    56448        0    73728       28             0 agetty
+[134261.337948] [24664]  1000 24664    58653        0    86016      556             0 bash
+[134261.338248] [24813]  1000 24813    54296        0    61440       55             0 cat
+[134261.338538] [27511]     0 27511    30419        0   262144      222             0 login
+[134261.338848] [27516]     0 27516    23439        0   212992      359             0 systemd
+[134261.339173] [27519]     0 27519    58447        1   311296     1333             0 (sd-pam)
+[134261.339460] [27528]     0 27528    59083        1    94208      463             0 bash
+[134261.339903] [27724]     0 27724   165619        1   520192     6102             0 firewalld
+[134261.340298] [52264]     0 52264    33689        0   274432      232             0 login
+[134261.340547] [52269]  1000 52269    58919      130    94208      683             0 bash
+[134261.340819] [52447]     0 52447    61679       30   114688      198             0 crond
+[134261.341064] [54873]     0 54873    12130        0   143360       89         -1000 sedispatch
+[134261.341306] [58933]     0 58933    77882        0   188416      678             0 gssproxy
+[134261.341559] [58963]     0 58963    12657        6   139264      353             0 smartd
+[134261.341800] [58980]     0 58980   158830      128   446464     3597             0 tuned
+[134261.342041] [59113]     0 59113     4359       10    65536       28             0 mcelog
+[134261.342283] [64213]     0 64213    24112        0   229376      618         -1000 systemd-udevd
+[134261.342544] [64276]     0 64276    22735        1   196608      223         -1000 sshd
+[134261.342792] [72330]     0 72330   105575       10   442368      497             0 sssd
+[134261.343032] [72331]     0 72331   107422       17   446464      626             0 sssd_be
+[134261.343266] [72332]     0 72332   108444       18   479232      391             0 sssd_nss
+[134261.343582] [98044]  1000 98044    58653        5    65536      543             0 bash
+[134261.343869] [98059]  1000 98059    55623        1    73728       60             0 bash
+[134261.344094] [98060]  1000 98060    55623       31    77824       31             0 bash
+[134261.344315] [98061]  1000 98061   651141   412478  4849664   183092             0 bash
+[134261.344555] [98073]     0 98073    68788      101   163840       98             0 top
+[134261.344777] [98712]  1000 98712    10444       53   110592        0             0 free
+[134261.344996] [98713]  1000 98713    55476       23    73728        0             0 grep
+[134261.345213] [98714]  1000 98714     5587       36    86016        0             0 awk
+[134261.345433] Out of memory: Killed process 98061 (bash) total-vm:2604564kB, anon-rss:1649912kB, file-rss:0kB, shmem-rss:0kB, UID:1000
+[134261.460960] oom_reaper: reaped process 98061 (bash), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB

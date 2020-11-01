@@ -1,4 +1,4 @@
-PID=98061
+PID=129034
 1000000
 2000000
 3000000
@@ -28,6 +28,3 @@ PID=98061
 27000000
 28000000
 29000000
-30000000
-[134261.345433] Out of memory: Killed process 98061 (bash) total-vm:2604564kB, anon-rss:1649912kB, file-rss:0kB, shmem-rss:0kB, UID:1000
-[134261.460960] oom_reaper: reaped process 98061 (bash), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB

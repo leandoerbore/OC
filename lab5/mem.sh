@@ -10,7 +10,7 @@ while true; do
 		mas+=($i)
 	done
 	#echo "$counter) ${mas[$counter]}"
-	echo "size: ${#mas[@]}"
+	#echo "size: ${#mas[@]}"
 	counter=$(($counter+1))
 	if (( counter % 100000 == 0 ));then
 		counter=0
