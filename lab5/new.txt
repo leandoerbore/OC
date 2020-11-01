@@ -1,1 +1,2 @@
+[150230.441517] Out of memory: Killed process 129035 (bash) total-vm:1417092kB, anon-rss:755512kB, file-rss:8kB, shmem-rss:0kB, UID:1000
 [150374.818029] Out of memory: Killed process 129034 (bash) total-vm:2557440kB, anon-rss:1605600kB, file-rss:0kB, shmem-rss:0kB, UID:1000
