@@ -1,0 +1,1291 @@
+[    0.000000] Linux version 4.18.0-193.el8.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 8.3.1 20191121 (Red Hat 8.3.1-5) (GCC)) #1 SMP Fri May 8 10:59:10 UTC 2020
+[    0.000000] Command line: BOOT_IMAGE=(hd0,msdos1)/vmlinuz-4.18.0-193.el8.x86_64 root=/dev/mapper/cl-root ro crashkernel=auto resume=/dev/mapper/cl-swap rd.lvm.lv=cl/root rd.lvm.lv=cl/swap
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+[    0.000000] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+[    0.000000] x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'standard' format.
+[    0.000000] BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+[    0.000000] BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x000000007ffeffff] usable
+[    0.000000] BIOS-e820: [mem 0x000000007fff0000-0x000000007fffffff] ACPI data
+[    0.000000] BIOS-e820: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] SMBIOS 2.5 present.
+[    0.000000] DMI: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[    0.000000] Hypervisor detected: KVM
+[    0.000000] kvm-clock: Using msrs 4b564d01 and 4b564d00
+[    0.000000] kvm-clock: cpu 0, msr 27401001, primary cpu clock
+[    0.000000] kvm-clock: using sched offset of 6490660884 cycles
+[    0.000000] clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+[    0.000000] tsc: Detected 3600.000 MHz processor
+[    0.000000] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+[    0.000000] e820: remove [mem 0x000a0000-0x000fffff] usable
+[    0.000000] last_pfn = 0x7fff0 max_arch_pfn = 0x400000000
+[    0.000000] MTRR default type: uncachable
+[    0.000000] MTRR variable ranges disabled:
+[    0.000000] Disabled
+[    0.000000] x86/PAT: MTRRs disabled, skipping PAT initialization too.
+[    0.000000] CPU MTRRs all blank - virtualized system.
+[    0.000000] x86/PAT: Configuration [0-7]: WB  WT  UC- UC  WB  WT  UC- UC  
+[    0.000000] found SMP MP-table at [mem 0x0009fff0-0x0009ffff]
+[    0.000000] kexec: Reserving the low 1M of memory for crashkernel
+[    0.000000] BRK [0x27601000, 0x27601fff] PGTABLE
+[    0.000000] BRK [0x27602000, 0x27602fff] PGTABLE
+[    0.000000] BRK [0x27603000, 0x27603fff] PGTABLE
+[    0.000000] BRK [0x27604000, 0x27604fff] PGTABLE
+[    0.000000] BRK [0x27605000, 0x27605fff] PGTABLE
+[    0.000000] BRK [0x27606000, 0x27606fff] PGTABLE
+[    0.000000] RAMDISK: [mem 0x34a0d000-0x364fefff]
+[    0.000000] ACPI: Early table checksum verification disabled
+[    0.000000] ACPI: RSDP 0x00000000000E0000 000024 (v02 VBOX  )
+[    0.000000] ACPI: XSDT 0x000000007FFF0030 00003C (v01 VBOX   VBOXXSDT 00000001 ASL  00000061)
+[    0.000000] ACPI: FACP 0x000000007FFF00F0 0000F4 (v04 VBOX   VBOXFACP 00000001 ASL  00000061)
+[    0.000000] ACPI: DSDT 0x000000007FFF0470 002325 (v02 VBOX   VBOXBIOS 00000002 INTL 20100528)
+[    0.000000] ACPI: FACS 0x000000007FFF0200 000040
+[    0.000000] ACPI: FACS 0x000000007FFF0200 000040
+[    0.000000] ACPI: APIC 0x000000007FFF0240 000054 (v02 VBOX   VBOXAPIC 00000001 ASL  00000061)
+[    0.000000] ACPI: SSDT 0x000000007FFF02A0 0001CC (v01 VBOX   VBOXCPUT 00000002 INTL 20100528)
+[    0.000000] ACPI: Local APIC address 0xfee00000
+[    0.000000] No NUMA configuration found
+[    0.000000] Faking a node at [mem 0x0000000000000000-0x000000007ffeffff]
+[    0.000000] NODE_DATA(0) allocated [mem 0x7ffc6000-0x7ffeffff]
+[    0.000000] Using crashkernel=auto, the size chosen is a best effort estimation.
+[    0.000000] Reserving 160MB of memory at 1872MB for crashkernel (System RAM: 2047MB)
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.000000]   DMA32    [mem 0x0000000001000000-0x000000007ffeffff]
+[    0.000000]   Normal   empty
+[    0.000000]   Device   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[    0.000000]   node   0: [mem 0x0000000000100000-0x000000007ffeffff]
+[    0.000000] Zeroed struct page in unavailable ranges: 98 pages
+[    0.000000] Initmem setup node 0 [mem 0x0000000000001000-0x000000007ffeffff]
+[    0.000000] On node 0 totalpages: 524174
+[    0.000000]   DMA zone: 64 pages used for memmap
+[    0.000000]   DMA zone: 158 pages reserved
+[    0.000000]   DMA zone: 3998 pages, LIFO batch:0
+[    0.000000]   DMA32 zone: 8128 pages used for memmap
+[    0.000000]   DMA32 zone: 520176 pages, LIFO batch:31
+[    0.000000] ACPI: PM-Timer IO Port: 0x4008
+[    0.000000] ACPI: Local APIC address 0xfee00000
+[    0.000000] IOAPIC[0]: apic_id 1, version 32, address 0xfec00000, GSI 0-23
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    0.000000] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 low level)
+[    0.000000] ACPI: IRQ0 used by override.
+[    0.000000] ACPI: IRQ9 used by override.
+[    0.000000] Using ACPI (MADT) for SMP configuration information
+[    0.000000] smpboot: Allowing 1 CPUs, 0 hotplug CPUs
+[    0.000000] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[    0.000000] PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+[    0.000000] PM: Registered nosave memory: [mem 0x000a0000-0x000effff]
+[    0.000000] PM: Registered nosave memory: [mem 0x000f0000-0x000fffff]
+[    0.000000] [mem 0x80000000-0xfebfffff] available for PCI devices
+[    0.000000] Booting paravirtualized kernel on KVM
+[    0.000000] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+[    0.000000] setup_percpu: NR_CPUS:8192 nr_cpumask_bits:1 nr_cpu_ids:1 nr_node_ids:1
+[    0.000000] percpu: Embedded 53 pages/cpu s180224 r8192 d28672 u2097152
+[    0.000000] pcpu-alloc: s180224 r8192 d28672 u2097152 alloc=1*2097152
+[    0.000000] pcpu-alloc: [0] 0 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 515824
+[    0.000000] Policy zone: DMA32
+[    0.000000] Kernel command line: BOOT_IMAGE=(hd0,msdos1)/vmlinuz-4.18.0-193.el8.x86_64 root=/dev/mapper/cl-root ro crashkernel=auto resume=/dev/mapper/cl-swap rd.lvm.lv=cl/root rd.lvm.lv=cl/swap
+[    0.000000] Specific versions of hardware are certified with Red Hat Enterprise Linux 8. Please see the list of hardware certified with Red Hat Enterprise Linux 8 at https://access.redhat.com/ecosystem.
+[    0.000000] Memory: 261120K/2096696K available (12292K kernel code, 2151K rwdata, 3848K rodata, 2404K init, 6476K bss, 260132K reserved, 0K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] Kernel/User page tables isolation: enabled
+[    0.000000] ftrace: allocating 36334 entries in 142 pages
+[    0.001000] rcu: Hierarchical RCU implementation.
+[    0.001000] rcu: 	RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=1.
+[    0.001000] rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+[    0.001000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.001000] NR_IRQS: 524544, nr_irqs: 256, preallocated irqs: 16
+[    0.001000] random: get_random_bytes called from start_kernel+0x36b/0x55b with crng_init=0
+[    0.001000] Console: colour VGA+ 80x25
+[    0.001000] printk: console [tty0] enabled
+[    0.001000] ACPI: Core revision 20190703
+[    0.001000] APIC: Switch to symmetric I/O mode setup
+[    0.001000] x2apic enabled
+[    0.001000] Switched APIC routing to physical x2apic.
+[    0.001000] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[    0.001000] clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x33e452fbb2f, max_idle_ns: 440795236593 ns
+[    0.001000] Calibrating delay loop (skipped) preset value.. 7200.00 BogoMIPS (lpj=3600000)
+[    0.001000] pid_max: default: 32768 minimum: 301
+[    0.001000] Security Framework initialized
+[    0.001000] Yama: becoming mindful.
+[    0.001000] SELinux:  Initializing.
+[    0.002125] Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes)
+[    0.003088] Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes)
+[    0.003506] Mount-cache hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.003823] Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.004000] process: using mwait in idle threads
+[    0.004000] Last level iTLB entries: 4KB 64, 2MB 8, 4MB 8
+[    0.004000] Last level dTLB entries: 4KB 64, 2MB 0, 4MB 0, 1GB 4
+[    0.004000] FEATURE SPEC_CTRL Not Present
+[    0.004000] FEATURE IBPB_SUPPORT Not Present
+[    0.004000] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+[    0.004000] Spectre V2 : Mitigation: Full generic retpoline
+[    0.004000] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+[    0.004000] Speculative Store Bypass: Vulnerable
+[    0.004000] MDS: Vulnerable: Clear CPU buffers attempted, no microcode
+[    0.021779] Freeing SMP alternatives memory: 32K
+[    0.024000] APIC calibration not consistent with PM-Timer: 104ms instead of 100ms
+[    0.024000] APIC delta adjusted to PM-Timer: 6250209 (6561939)
+[    0.024000] smpboot: CPU0: Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz (family: 0x6, model: 0x9e, stepping: 0x9)
+[    0.024000] Performance Events: unsupported p6 CPU model 158 no PMU driver, software events only.
+[    0.024000] rcu: Hierarchical SRCU implementation.
+[    0.024000] NMI watchdog: Perf NMI watchdog permanently disabled
+[    0.024000] smp: Bringing up secondary CPUs ...
+[    0.024000] smp: Brought up 1 node, 1 CPU
+[    0.024000] smpboot: Max logical packages: 1
+[    0.024000] smpboot: Total of 1 processors activated (7200.00 BogoMIPS)
+[    0.024005] node 0 initialised, 393861 pages in 1ms
+[    0.025044] devtmpfs: initialized
+[    0.025246] x86/mm: Memory block size: 128MB
+[    0.025780] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+[    0.026000] futex hash table entries: 256 (order: 2, 16384 bytes)
+[    0.026000] pinctrl core: initialized pinctrl subsystem
+[    0.026087] NET: Registered protocol family 16
+[    0.027004] audit: initializing netlink subsys (disabled)
+[    0.027464] cpuidle: using governor menu
+[    0.027699] ACPI: bus type PCI registered
+[    0.027886] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    0.030002] PCI: Using configuration type 1 for base access
+[    0.031617] audit: type=2000 audit(1604070472.470:1): state=initialized audit_enabled=0 res=1
+[    0.032071] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.032415] cryptd: max_cpu_qlen set to 1000
+[    0.032670] ACPI: Added _OSI(Module Device)
+[    0.032857] ACPI: Added _OSI(Processor Device)
+[    0.033000] ACPI: Added _OSI(3.0 _SCP Extensions)
+[    0.033000] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.033000] ACPI: Added _OSI(Linux-Dell-Video)
+[    0.033000] ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+[    0.033034] ACPI: Added _OSI(Linux-HPI-Hybrid-Graphics)
+[    0.039402] ACPI: 2 ACPI AML tables successfully acquired and loaded
+[    0.043852] ACPI: Interpreter enabled
+[    0.044000] ACPI: (supports S0 S5)
+[    0.044000] ACPI: Using IOAPIC for interrupt routing
+[    0.044139] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    0.044586] ACPI: Enabled 2 GPEs in block 00 to 07
+[    0.049136] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[    0.049381] acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI HPX-Type3]
+[    0.049963] acpi PNP0A03:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
+[    0.050000] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+[    0.051128] PCI host bridge to bus 0000:00
+[    0.051546] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[    0.051935] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[    0.052000] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[    0.052000] pci_bus 0000:00: root bus resource [mem 0x80000000-0xfdffffff window]
+[    0.052000] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    0.052028] pci 0000:00:00.0: [8086:1237] type 00 class 0x060000
+[    0.055160] pci 0000:00:01.0: [8086:7000] type 00 class 0x060100
+[    0.056220] pci 0000:00:01.1: [8086:7111] type 00 class 0x01018a
+[    0.056789] pci 0000:00:01.1: reg 0x20: [io  0xd000-0xd00f]
+[    0.057134] pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+[    0.057390] pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+[    0.057703] pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+[    0.058000] pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+[    0.058440] pci 0000:00:02.0: [15ad:0405] type 00 class 0x030000
+[    0.059203] pci 0000:00:02.0: reg 0x10: [io  0xd010-0xd01f]
+[    0.061178] pci 0000:00:02.0: reg 0x14: [mem 0xe0000000-0xe0ffffff pref]
+[    0.062176] pci 0000:00:02.0: reg 0x18: [mem 0xf0000000-0xf01fffff]
+[    0.069342] pci 0000:00:03.0: [8086:100e] type 00 class 0x020000
+[    0.070058] pci 0000:00:03.0: reg 0x10: [mem 0xf0200000-0xf021ffff]
+[    0.072054] pci 0000:00:03.0: reg 0x18: [io  0xd020-0xd027]
+[    0.077340] pci 0000:00:04.0: [80ee:cafe] type 00 class 0x088000
+[    0.079005] pci 0000:00:04.0: reg 0x10: [io  0xd040-0xd05f]
+[    0.080055] pci 0000:00:04.0: reg 0x14: [mem 0xf0400000-0xf07fffff]
+[    0.082076] pci 0000:00:04.0: reg 0x18: [mem 0xf0800000-0xf0803fff pref]
+[    0.088178] pci 0000:00:05.0: [8086:2415] type 00 class 0x040100
+[    0.088594] pci 0000:00:05.0: reg 0x10: [io  0xd100-0xd1ff]
+[    0.088923] pci 0000:00:05.0: reg 0x14: [io  0xd200-0xd23f]
+[    0.089532] pci 0000:00:06.0: [106b:003f] type 00 class 0x0c0310
+[    0.090051] pci 0000:00:06.0: reg 0x10: [mem 0xf0804000-0xf0804fff]
+[    0.097258] pci 0000:00:07.0: [8086:7113] type 00 class 0x068000
+[    0.097989] pci 0000:00:07.0: quirk: [io  0x4000-0x403f] claimed by PIIX4 ACPI
+[    0.098003] pci 0000:00:07.0: quirk: [io  0x4100-0x410f] claimed by PIIX4 SMB
+[    0.099324] pci 0000:00:0d.0: [8086:2829] type 00 class 0x010601
+[    0.100055] pci 0000:00:0d.0: reg 0x10: [io  0xd240-0xd247]
+[    0.101052] pci 0000:00:0d.0: reg 0x14: [io  0xd248-0xd24b]
+[    0.102053] pci 0000:00:0d.0: reg 0x18: [io  0xd250-0xd257]
+[    0.103081] pci 0000:00:0d.0: reg 0x1c: [io  0xd258-0xd25b]
+[    0.105061] pci 0000:00:0d.0: reg 0x20: [io  0xd260-0xd26f]
+[    0.107024] pci 0000:00:0d.0: reg 0x24: [mem 0xf0806000-0xf0807fff]
+[    0.109270] ACPI: PCI Interrupt Link [LNKA] (IRQs 5 9 10 *11)
+[    0.109731] ACPI: PCI Interrupt Link [LNKB] (IRQs 5 9 *10 11)
+[    0.110046] ACPI: PCI Interrupt Link [LNKC] (IRQs 5 *9 10 11)
+[    0.110367] ACPI: PCI Interrupt Link [LNKD] (IRQs 5 9 10 *11)
+[    0.110723] iommu: Default domain type: Passthrough 
+[    0.110968] pci 0000:00:02.0: vgaarb: setting as boot VGA device
+[    0.111000] pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+[    0.111000] pci 0000:00:02.0: vgaarb: bridge control possible
+[    0.111000] vgaarb: loaded
+[    0.111000] SCSI subsystem initialized
+[    0.111000] ACPI: bus type USB registered
+[    0.111000] usbcore: registered new interface driver usbfs
+[    0.111000] usbcore: registered new interface driver hub
+[    0.111000] usbcore: registered new device driver usb
+[    0.111000] pps_core: LinuxPPS API ver. 1 registered
+[    0.111000] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.111000] PTP clock support registered
+[    0.111000] EDAC MC: Ver: 3.0.0
+[    0.114136] PCI: Using ACPI for IRQ routing
+[    0.114377] PCI: pci_cache_line_size set to 64 bytes
+[    0.115275] e820: reserve RAM buffer [mem 0x0009fc00-0x0009ffff]
+[    0.115277] e820: reserve RAM buffer [mem 0x7fff0000-0x7fffffff]
+[    0.115384] NetLabel: Initializing
+[    0.115570] NetLabel:  domain hash size = 128
+[    0.115787] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.116000] NetLabel:  unlabeled traffic allowed by default
+[    0.116000] clocksource: Switched to clocksource kvm-clock
+[    0.129257] VFS: Disk quotas dquot_6.6.0
+[    0.129495] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.129846] pnp: PnP ACPI init
+[    0.130062] pnp 00:00: Plug and Play ACPI device, IDs PNP0303 (active)
+[    0.130127] pnp 00:01: Plug and Play ACPI device, IDs PNP0f03 (active)
+[    0.130678] pnp: PnP ACPI: found 2 devices
+[    0.136370] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[    0.136778] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+[    0.137019] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+[    0.137280] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+[    0.137363] pci_bus 0000:00: resource 7 [mem 0x80000000-0xfdffffff window]
+[    0.137363] NET: Registered protocol family 2
+[    0.137363] tcp_listen_portaddr_hash hash table entries: 1024 (order: 2, 16384 bytes)
+[    0.137363] TCP established hash table entries: 16384 (order: 5, 131072 bytes)
+[    0.137363] TCP bind hash table entries: 16384 (order: 6, 262144 bytes)
+[    0.137363] TCP: Hash tables configured (established 16384 bind 16384)
+[    0.137363] UDP hash table entries: 1024 (order: 3, 32768 bytes)
+[    0.137363] UDP-Lite hash table entries: 1024 (order: 3, 32768 bytes)
+[    0.137363] NET: Registered protocol family 1
+[    0.137363] NET: Registered protocol family 44
+[    0.137363] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+[    0.141091] pci 0000:00:01.0: Activating ISA DMA hang workarounds
+[    0.141503] pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+[    0.143051] PCI: CLS 0 bytes, default 64
+[    0.143323] Unpacking initramfs...
+[    0.513973] Freeing initrd memory: 27592K
+[    0.514254] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x33e452fbb2f, max_idle_ns: 440795236593 ns
+[    0.514473] clocksource: Switched to clocksource tsc
+[    0.514473] platform rtc_cmos: registered platform RTC device (no PNP device found)
+[    0.521209] Initialise system trusted keyrings
+[    0.521261] Key type blacklist registered
+[    0.521261] workingset: timestamp_bits=36 max_order=19 bucket_order=0
+[    0.523086] zbud: loaded
+[    0.523248] pstore: using deflate compression
+[    0.523248] Platform Keyring initialized
+[    0.582803] NET: Registered protocol family 38
+[    0.582803] Key type asymmetric registered
+[    0.582803] Asymmetric key parser 'x509' registered
+[    0.582803] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 246)
+[    0.582803] io scheduler mq-deadline registered
+[    0.582803] io scheduler kyber registered
+[    0.582803] io scheduler bfq registered
+[    0.584779] atomic64_test: passed for x86-64 platform with CX8 and with SSE
+[    0.585123] shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+[    0.585490] ACPI: AC Adapter [AC] (on-line)
+[    0.585751] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+[    0.586069] ACPI: Power Button [PWRF]
+[    0.586311] input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input1
+[    0.586628] ACPI: Sleep Button [SLPF]
+[    0.586993] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    0.587258] Non-volatile memory driver v1.3
+[    0.587750] rdac: device handler registered
+[    0.587953] hp_sw: device handler registered
+[    0.588141] emc: device handler registered
+[    0.588335] alua: device handler registered
+[    0.588543] libphy: Fixed MDIO Bus: probed
+[    0.588656] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.588656] ehci-pci: EHCI PCI platform driver
+[    0.588656] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    0.588656] ohci-pci: OHCI PCI platform driver
+[    0.590397] ohci-pci 0000:00:06.0: OHCI PCI host controller
+[    0.590676] ohci-pci 0000:00:06.0: new USB bus registered, assigned bus number 1
+[    0.591039] ohci-pci 0000:00:06.0: irq 22, io mem 0xf0804000
+[    0.644433] usb usb1: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 4.18
+[    0.645297] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.646038] usb usb1: Product: OHCI PCI host controller
+[    0.646285] usb usb1: Manufacturer: Linux 4.18.0-193.el8.x86_64 ohci_hcd
+[    0.646285] usb usb1: SerialNumber: 0000:00:06.0
+[    0.646285] hub 1-0:1.0: USB hub found
+[    0.646285] hub 1-0:1.0: 12 ports detected
+[    0.649377] uhci_hcd: USB Universal Host Controller Interface driver
+[    0.650002] usbcore: registered new interface driver usbserial_generic
+[    0.650002] usbserial: USB Serial support registered for generic
+[    0.650002] i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f03:PS2M] at 0x60,0x64 irq 1,12
+[    0.652838] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    0.653139] serio: i8042 AUX port at 0x60,0x64 irq 12
+[    0.653139] mousedev: PS/2 mouse device common for all mice
+[    0.654973] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input2
+[    0.658052] rtc_cmos rtc_cmos: registered as rtc0
+[    0.658486] rtc_cmos rtc_cmos: alarms up to one day, 114 bytes nvram
+[    0.658486] intel_pstate: CPU model not supported
+[    0.658486] hidraw: raw HID events driver (C) Jiri Kosina
+[    0.658486] usbcore: registered new interface driver usbhid
+[    0.658486] usbhid: USB HID core driver
+[    0.658486] drop_monitor: Initializing network drop monitor service
+[    0.661995] Initializing XFRM netlink socket
+[    0.662648] NET: Registered protocol family 10
+[    0.662894] Segment Routing with IPv6
+[    0.662894] NET: Registered protocol family 17
+[    0.662894] mpls_gso: MPLS GSO support
+[    0.662894] core: Using 0 MCE banks
+[    0.662894] AVX2 version of gcm_enc/dec engaged.
+[    0.662894] AES CTR mode by8 optimization enabled
+[    0.693740] sched_clock: Marking stable (693105685, 0)->(1764570287, -1071464602)
+[    0.694273] registered taskstats version 1
+[    0.694482] Loading compiled-in X.509 certificates
+[    0.718103] Loaded X.509 cert 'CentOS Linux kernel signing key: 5e845a6615b39bf1de63e0d9551f41c3de386d7f'
+[    0.718510] Loaded X.509 cert 'CentOS Linux Driver update signing key: 29bd4c0d06d2e9911044b5dc973309139b51d6d5'
+[    0.718907] Loaded X.509 cert 'CentOS Linux kpatch signing key: b49f086205909dc4da2cfa99376fb191d2f09e78'
+[    0.719283] zswap: loaded using pool lzo/zbud
+[    0.724463] Key type big_key registered
+[    0.726972] Key type encrypted registered
+[    0.727166] ima: No TPM chip found, activating TPM-bypass!
+[    0.727587] ima: Allocated hash algorithm: sha1
+[    0.728335] evm: Initialising EVM extended attributes:
+[    0.728545] evm: security.selinux
+[    0.728772] evm: security.ima
+[    0.728930] evm: security.capability
+[    0.729101] evm: HMAC attrs: 0x1
+[    0.729544] rtc_cmos rtc_cmos: setting system clock to 2020-10-30 15:07:44 UTC (1604070464)
+[    0.866731] random: fast init done
+[    0.875034] input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input4
+[    0.879854] Freeing unused decrypted memory: 2040K
+[    0.880762] Freeing unused kernel memory: 2404K
+[    0.882041] Write protecting the kernel read-only data: 18432k
+[    0.882892] Freeing unused kernel memory: 2020K
+[    0.883293] Freeing unused kernel memory: 248K
+[    0.899257] systemd[1]: systemd 239 running in system mode. (+PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=legacy)
+[    0.900535] systemd[1]: Detected virtualization oracle.
+[    0.900877] systemd[1]: Detected architecture x86-64.
+[    0.901364] systemd[1]: Running in initial RAM disk.
+[    0.908749] systemd[1]: Set hostname to <localhost.localdomain>.
+[    0.977988] random: systemd: uninitialized urandom read (16 bytes read)
+[    0.978256] systemd[1]: Reached target Timers.
+[    0.978999] random: systemd: uninitialized urandom read (16 bytes read)
+[    0.979309] systemd[1]: Listening on udev Control Socket.
+[    0.979989] random: systemd: uninitialized urandom read (16 bytes read)
+[    0.980269] systemd[1]: Listening on udev Kernel Socket.
+[    0.980933] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+[    0.981799] systemd[1]: Reached target Paths.
+[    2.196529] device-mapper: uevent: version 1.0.3
+[    2.197877] device-mapper: ioctl: 4.39.0-ioctl (2018-04-03) initialised: dm-devel@redhat.com
+[    4.024911] e1000: Intel(R) PRO/1000 Network Driver - version 7.3.21-k8-NAPI
+[    4.025181] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[    4.025402] e1000: E1000 MODULE IS NOT SUPPORTED
+[    4.100747] libata version 3.00 loaded.
+[    4.113882] ata_piix 0000:00:01.1: version 2.13
+[    4.115612] scsi host0: ata_piix
+[    4.117756] scsi host1: ata_piix
+[    4.118928] ata1: PATA max UDMA/33 cmd 0x1f0 ctl 0x3f6 bmdma 0xd000 irq 14
+[    4.119212] ata2: PATA max UDMA/33 cmd 0x170 ctl 0x376 bmdma 0xd008 irq 15
+[    4.123406] ahci 0000:00:0d.0: version 3.0
+[    4.123942] ahci 0000:00:0d.0: SSS flag set, parallel bus scan disabled
+[    4.131270] ahci 0000:00:0d.0: AHCI 0001.0100 32 slots 1 ports 3 Gbps 0x1 impl SATA mode
+[    4.131816] ahci 0000:00:0d.0: flags: 64bit ncq stag only ccc 
+[    4.177084] scsi host2: ahci
+[    4.177270] ata3: SATA max UDMA/133 abar m8192@0xf0806000 port 0xf0806100 irq 21
+[    4.291889] ata2.00: ATAPI: VBOX CD-ROM, 1.0, max UDMA/133
+[    4.292898] scsi 1:0:0:0: CD-ROM            VBOX     CD-ROM           1.0  PQ: 0 ANSI: 5
+[    4.485552] ata3: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[    4.485895] ata3.00: ATA-6: VBOX HARDDISK, 1.0, max UDMA/133
+[    4.486116] ata3.00: 16777216 sectors, multi 128: LBA48 NCQ (depth 32)
+[    4.486732] ata3.00: configured for UDMA/133
+[    4.486992] scsi 2:0:0:0: Direct-Access     ATA      VBOX HARDDISK    1.0  PQ: 0 ANSI: 5
+[    4.516481] scsi 1:0:0:0: Attached scsi generic sg0 type 5
+[    4.517389] scsi 2:0:0:0: Attached scsi generic sg1 type 0
+[    4.521507] sd 2:0:0:0: [sda] 16777216 512-byte logical blocks: (8.59 GB/8.00 GiB)
+[    4.521837] sd 2:0:0:0: [sda] Write Protect is off
+[    4.522037] sd 2:0:0:0: [sda] Mode Sense: 00 3a 00 00
+[    4.522044] sd 2:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    4.527801]  sda: sda1 sda2
+[    4.528137] sd 2:0:0:0: [sda] Attached SCSI disk
+[    4.558368] sr 1:0:0:0: [sr0] scsi3-mmc drive: 32x/32x xa/form2 tray
+[    4.558615] cdrom: Uniform CD-ROM driver Revision: 3.20
+[    4.560035] sr 1:0:0:0: Attached scsi CD-ROM sr0
+[    5.174998] random: crng init done
+[    5.175191] random: 7 urandom warning(s) missed due to ratelimiting
+[    5.325619] e1000 0000:00:03.0 eth0: (PCI:33MHz:32-bit) 08:00:27:38:e6:e4
+[    5.325907] e1000 0000:00:03.0 eth0: Intel(R) PRO/1000 Network Connection
+[    5.327639] e1000 0000:00:03.0 enp0s3: renamed from eth0
+[    5.697943] PM: Image not found (code -22)
+[    5.897038] EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null)
+[    6.488195] systemd-journald[261]: Received SIGTERM from PID 1 (systemd).
+[    6.509862] printk: systemd: 22 output lines suppressed due to ratelimiting
+[    6.654259] audit: type=1404 audit(1604070470.424:2): enforcing=1 old_enforcing=0 auid=4294967295 ses=4294967295 enabled=1 old-enabled=1 lsm=selinux res=1
+[    7.172499] SELinux:  policy capability network_peer_controls=1
+[    7.172742] SELinux:  policy capability open_perms=1
+[    7.172973] SELinux:  policy capability extended_socket_class=1
+[    7.173198] SELinux:  policy capability always_check_network=0
+[    7.173991] SELinux:  policy capability cgroup_seclabel=1
+[    7.174319] SELinux:  policy capability nnp_nosuid_transition=1
+[    7.184914] audit: type=1403 audit(1604070470.954:3): auid=4294967295 ses=4294967295 lsm=selinux res=1
+[    7.186664] systemd[1]: Successfully loaded SELinux policy in 532.947ms.
+[    7.276991] systemd[1]: Relabelled /dev, /run and /sys/fs/cgroup in 28.037ms.
+[    7.279574] systemd[1]: systemd 239 running in system mode. (+PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=legacy)
+[    7.280381] systemd[1]: Detected virtualization oracle.
+[    7.280600] systemd[1]: Detected architecture x86-64.
+[    7.284994] systemd[1]: Set hostname to <localhost.localdomain>.
+[    7.617145] systemd[1]: Stopped Switch Root.
+[    7.618050] systemd[1]: systemd-journald.service: Service has no hold-off time (RestartSec=0), scheduling restart.
+[    7.618596] systemd[1]: systemd-journald.service: Scheduled restart job, restart counter is at 1.
+[    7.618984] systemd[1]: Stopped Journal Service.
+[    7.620756] systemd[1]: Starting Journal Service...
+[    7.622216] systemd[1]: Listening on udev Control Socket.
+[    7.662184] Adding 839676k swap on /dev/mapper/cl-swap.  Priority:-2 extents:1 across:839676k FS
+[    7.687961] EXT4-fs (dm-0): re-mounted. Opts: (null)
+[    8.698650] systemd-journald[648]: Received request to flush runtime journal from PID 1
+[    9.015311] ACPI: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+[    9.026723] input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A03:00/LNXVIDEO:00/input/input5
+[    9.037609] piix4_smbus 0000:00:07.0: SMBus Host Controller at 0x4100, revision 0
+[    9.054972] input: PC Speaker as /devices/platform/pcspkr/input/input6
+[    9.146831] RAPL PMU: API unit is 2^-32 Joules, 0 fixed counters, 10737418240 ms ovfl timer
+[    9.406298] intel_pmc_core intel_pmc_core.0:  initialized
+[    9.525853] [drm] DMA map mode: Caching DMA mappings.
+[    9.526163] [drm] Capabilities:
+[    9.526340] [drm]   Cursor.
+[    9.526493] [drm]   Cursor bypass 2.
+[    9.526664] [drm]   Alpha cursor.
+[    9.526829] [drm]   3D.
+[    9.526974] [drm]   Extended Fifo.
+[    9.527142] [drm]   Pitchlock.
+[    9.527363] [drm]   Irq mask.
+[    9.527520] [drm]   GMR.
+[    9.527667] [drm]   Traces.
+[    9.527819] [drm]   GMR2.
+[    9.527967] [drm]   Screen Object 2.
+[    9.528139] [drm] Max GMR ids is 8192
+[    9.528331] [drm] Max number of GMR pages is 1048576
+[    9.528535] [drm] Max dedicated hypervisor surface memory is 507904 kiB
+[    9.528776] [drm] Maximum display memory size is 16384 kiB
+[    9.528991] [drm] VRAM at 0xe0000000 size is 16384 kiB
+[    9.529199] [drm] MMIO at 0xf0000000 size is 2048 kiB
+[    9.533627] [TTM] Zone  kernel: Available graphics memory: 935450 KiB
+[    9.533926] [TTM] Initializing pool allocator
+[    9.534147] [TTM] Initializing DMA pool allocator
+[    9.534365] [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[    9.534637] [drm] No driver support for vblank timestamp query.
+[    9.536292] [drm] Screen Objects Display Unit initialized
+[    9.536561] [drm] width 720
+[    9.536900] [drm] height 400
+[    9.537077] [drm] bpp 32
+[    9.537358] [drm] Fifo max 0x00200000 min 0x00001000 cap 0x00000355
+[    9.539284] [drm] DX: no.
+[    9.540220] [drm] Atomic: yes.
+[    9.541177] [drm] SM4_1: no.
+[    9.545809] [drm:vmw_host_log [vmwgfx]] *ERROR* Failed to send host log message.
+[    9.555049] [drm:vmw_host_log [vmwgfx]] *ERROR* Failed to send host log message.
+[    9.567614] fbcon: svgadrmfb (fb0) is primary device
+[    9.570245] Console: switching to colour frame buffer device 100x37
+[    9.575686] [drm] Initialized vmwgfx 2.15.0 20180704 for 0000:00:02.0 on minor 0
+[   10.602575] snd_intel8x0 0000:00:05.0: white list rate for 1028:0177 is 48000
+[   10.738241] EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null)
+[   10.755698] SGI XFS with ACLs, security attributes, no debug enabled
+[   10.768346] XFS (dm-2): Mounting V5 Filesystem
+[   10.798236] XFS (dm-2): Ending clean mount
+[   11.013572] RPC: Registered named UNIX socket transport module.
+[   11.014037] RPC: Registered udp transport module.
+[   11.014378] RPC: Registered tcp transport module.
+[   11.014739] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[   16.765863] IPv6: ADDRCONF(NETDEV_UP): enp0s3: link is not ready
+[   16.767637] IPv6: ADDRCONF(NETDEV_UP): enp0s3: link is not ready
+[   16.769644] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[   16.770337] IPv6: ADDRCONF(NETDEV_CHANGE): enp0s3: link becomes ready
+[12810.588514] e1000: enp0s3 NIC Link is Down
+[12812.636043] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[21537.112578] e1000: enp0s3 NIC Link is Down
+[21539.161754] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[23484.760236] e1000: enp0s3 NIC Link is Down
+[23486.808847] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[47649.103335] e1000: enp0s3 NIC Link is Down
+[47653.200198] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[86761.858405] e1000: enp0s3 NIC Link is Down
+[86765.954997] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[106131.835071] e1000: enp0s3 NIC Link is Down
+[106135.931302] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[111089.624871] tuned invoked oom-killer: gfp_mask=0x6200ca(GFP_HIGHUSER_MOVABLE), nodemask=(null), order=0, oom_score_adj=0
+[111089.625359] tuned cpuset=/ mems_allowed=0
+[111089.625589] CPU: 0 PID: 1093 Comm: tuned Kdump: loaded Tainted: G                 ---------r-  - 4.18.0-193.el8.x86_64 #1
+[111089.626029] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[111089.626268] Call Trace:
+[111089.626513]  dump_stack+0x5c/0x80
+[111089.626724]  dump_header+0x6e/0x27a
+[111089.626921]  ? try_to_free_pages+0xe8/0x1c0
+[111089.627110]  oom_kill_process.cold.29+0xb/0x10
+[111089.627361]  out_of_memory+0x1ba/0x490
+[111089.627559]  __alloc_pages_slowpath+0xc18/0xd00
+[111089.627747]  __alloc_pages_nodemask+0x245/0x280
+[111089.627946]  filemap_fault+0x3d0/0x860
+[111089.628148]  ? alloc_set_pte+0x203/0x480
+[111089.628338]  ? filemap_map_pages+0x1ed/0x3b0
+[111089.628553]  ext4_filemap_fault+0x2c/0x40 [ext4]
+[111089.628749]  __do_fault+0x38/0xc0
+[111089.628942]  do_fault+0x191/0x3c0
+[111089.629150]  __handle_mm_fault+0x441/0x6a0
+[111089.629364]  handle_mm_fault+0xda/0x200
+[111089.629581]  __do_page_fault+0x22d/0x4e0
+[111089.629798]  do_page_fault+0x32/0x110
+[111089.630017]  ? page_fault+0x8/0x30
+[111089.630236]  page_fault+0x1e/0x30
+[111089.630458] RIP: 0033:0x7fcfd6d75fbc
+[111089.630683] Code: Bad RIP value.
+[111089.630911] RSP: 002b:00007fcfbe790e10 EFLAGS: 00010202
+[111089.631196] RAX: 000056330e4516f0 RBX: 00007fcfc8071de0 RCX: 0000000000000000
+[111089.631449] RDX: 0000000000000000 RSI: 0000000000000000 RDI: 000056330e451668
+[111089.631677] RBP: 000056330e451668 R08: 0000000000000057 R09: 0000000000000000
+[111089.631908] R10: 0000000000000000 R11: 000056330e451818 R12: 000056330e484ed0
+[111089.632156] R13: 00007fcfd7097ac0 R14: 000056330e451818 R15: 00007fcfd70fecc4
+[111089.632448] Mem-Info:
+[111089.632690] active_anon:314476 inactive_anon:107313 isolated_anon:0
+                 active_file:17 inactive_file:1250 isolated_file:1
+                 unevictable:0 dirty:0 writeback:0 unstable:0
+                 slab_reclaimable:5988 slab_unreclaimable:12030
+                 mapped:14 shmem:34 pagetables:3628 bounce:0
+                 free:13041 free_pcp:35 free_cma:0
+[111089.634400] Node 0 active_anon:1257904kB inactive_anon:429252kB active_file:68kB inactive_file:5000kB unevictable:0kB isolated(anon):0kB isolated(file):4kB mapped:56kB dirty:0kB writeback:0kB shmem:136kB shmem_thp: 0kB shmem_pmdmapped: 0kB anon_thp: 96256kB writeback_tmp:0kB unstable:0kB all_unreclaimable? no
+[111089.635483] Node 0 DMA free:7488kB min:376kB low:468kB high:560kB active_anon:7852kB inactive_anon:0kB active_file:0kB inactive_file:0kB unevictable:0kB writepending:0kB present:15992kB managed:15360kB mlocked:0kB kernel_stack:0kB pagetables:16kB bounce:0kB free_pcp:0kB local_pcp:0kB free_cma:0kB
+[111089.636686] lowmem_reserve[]: 0 1778 1778 1778 1778
+[111089.637071] Node 0 DMA32 free:44676kB min:44676kB low:55844kB high:67012kB active_anon:1250052kB inactive_anon:429252kB active_file:68kB inactive_file:5000kB unevictable:0kB writepending:0kB present:2080704kB managed:1855540kB mlocked:0kB kernel_stack:2512kB pagetables:14496kB bounce:0kB free_pcp:140kB local_pcp:140kB free_cma:0kB
+[111089.638626] lowmem_reserve[]: 0 0 0 0 0
+[111089.638952] Node 0 DMA: 2*4kB (UM) 1*8kB (U) 1*16kB (M) 1*32kB (U) 2*64kB (UM) 1*128kB (U) 2*256kB (UM) 1*512kB (U) 0*1024kB 1*2048kB (M) 1*4096kB (M) = 7488kB
+[111089.639953] Node 0 DMA32: 287*4kB (UME) 241*8kB (UME) 126*16kB (UME) 93*32kB (UME) 42*64kB (UME) 13*128kB (UME) 6*256kB (UME) 0*512kB 0*1024kB 3*2048kB (UME) 6*4096kB (M) = 44676kB
+[111089.640979] Node 0 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=2048kB
+[111089.641370] 4898 total pagecache pages
+[111089.641746] 3579 pages in swap cache
+[111089.642143] Swap cache stats: add 210833, delete 207254, find 110/257
+[111089.642538] Free swap  = 0kB
+[111089.642940] Total swap = 839676kB
+[111089.643464] 524174 pages RAM
+[111089.643888] 0 pages HighMem/MovableOnly
+[111089.644371] 56449 pages reserved
+[111089.644830] 0 pages hwpoisoned
+[111089.645220] [ pid ]   uid  tgid total_vm      rss pgtables_bytes swapents oom_score_adj name
+[111089.645671] [  648]     0   648    23498       18   253952      271             0 systemd-journal
+[111089.646449] [  674]     0   674    27308       64   221184      732         -1000 systemd-udevd
+[111089.646839] [  796]    32   796    16780       61   176128      118             0 rpcbind
+[111089.647245] [  799]     0   799    18908       69   159744       81         -1000 auditd
+[111089.647634] [  827]     0   827   115688       37   397312      396             0 ModemManager
+[111089.648022] [  828]     0   828     6592       84    94208      221             0 smartd
+[111089.648429] [  829]     0   829   105552       14   430080      478             0 sssd
+[111089.648808] [  830]    70   830    20686       39   159744       81             0 avahi-daemon
+[111089.649204] [  832]   998   832   406720      936   323584      463             0 polkitd
+[111089.649570] [  833]    81   833    17718      159   172032       72          -900 dbus-daemon
+[111089.649927] [  835]   997   835     4718       29    69632        9             0 lsmd
+[111089.650295] [  841]     0   841     4352       19    69632       18             0 mcelog
+[111089.650635] [  842]   991   842    40057       54   196608      147             0 rngd
+[111089.650965] [  845]     0   845    77886       46   180224      118             0 gssproxy
+[111089.651307] [  846]    70   846    20655        6   147456      102             0 avahi-daemon
+[111089.651629] [  862]     0   862   107209      153   442368      500             0 sssd_be
+[111089.651943] [  863]     0   863   107777      351   454656       72             0 sssd_nss
+[111089.652359] [  866]     0   866   124680        0   471040     5502             0 firewalld
+[111089.652655] [  867]     0   867    23926      234   212992      429             0 systemd-logind
+[111089.652945] [  883]     0   883   169522      380   397312      247             0 NetworkManager
+[111089.653255] [  891]     0   891   158766      641   450560     3067             0 tuned
+[111089.653602] [  892]     0   892    23242       65   204800      161         -1000 sshd
+[111089.653877] [ 1114]     0  1114    61471       62   110592      168             0 crond
+[111089.654175] [ 1115]     0  1115    10656       28   110592       25             0 atd
+[111089.654432] [ 1416]  1000  1416    23463       55   225280      310             0 systemd
+[111089.654682] [ 1421]  1000  1421    61716        4   315392     1335             0 (sd-pam)
+[111089.654926] [ 3960]     0  3960    33689       10   278528      213             0 login
+[111089.655192] [ 3967]  1000  3967    65053        1   131072      696             0 bash
+[111089.655434] [ 4328]  1000  4328    76943        1   233472      224             0 crontab
+[111089.655673] [ 4330]  1000  4330    61007        0   110592      128             0 vi
+[111089.655913] [ 4420]  1000  4420    76943        1   225280      224             0 crontab
+[111089.656179] [ 4422]  1000  4422    61007        0   110592      128             0 vi
+[111089.656420] [ 4473]  1000  4473    76943        1   229376      224             0 crontab
+[111089.656661] [ 4475]  1000  4475    61007        0   106496      127             0 vi
+[111089.656934] [ 4536]  1000  4536    55622        0    69632       60             0 bash
+[111089.657174] [ 7077]  1000  7077    55622        0    77824       59             0 bash
+[111089.657404] [ 7219]  1000  7219    55622        0    81920       64             0 bash
+[111089.657627] [ 7251]  1000  7251    55622        0    81920       60             0 bash
+[111089.657842] [ 7290]  1000  7290    55622        0    77824       63             0 bash
+[111089.658073] [ 7488]  1000  7488    55622        0    77824       63             0 bash
+[111089.658280] [ 7500]  1000  7500    55622        0    73728       63             0 bash
+[111089.658482] [ 7837]  1000  7837    55622        0    73728       63             0 bash
+[111089.658680] [ 7913]  1000  7913    55622        0    65536       63             0 bash
+[111089.658898] [ 7926]  1000  7926    55622        0    81920       63             0 bash
+[111089.659147] [ 8046]  1000  8046    76944        1   221184      224             0 crontab
+[111089.659338] [ 8048]  1000  8048    61007        0   110592      127             0 vi
+[111089.659526] [ 8074]  1000  8074    55622        0    81920       63             0 bash
+[111089.659713] [ 8085]  1000  8085    76943        1   237568      224             0 crontab
+[111089.659962] [ 8087]  1000  8087    61007        0   110592      127             0 vi
+[111089.660152] [ 8447]  1000  8447    76942        0   225280      221             0 crontab
+[111089.660340] [ 8449]  1000  8449    76944        1   233472      225             0 crontab
+[111089.660525] [ 8451]  1000  8451    61007        0   102400      126             0 vi
+[111089.660708] [ 8457]  1000  8457    54264        0    65536       27             0 wc
+[111089.660910] [11713]     0 11713    56448        3    73728       26             0 agetty
+[111089.661095] [11714]     0 11714    33689       29   274432      212             0 login
+[111089.661276] [11715]     0 11715    56448        3    73728       25             0 agetty
+[111089.661457] [12071]  1000 12071    54271        0    65536       27             0 wc
+[111089.661635] [16158]  1000 16158    55475        0    77824       40             0 grep
+[111089.661833] [16165]  1000 16165    55475        0    73728       39             0 grep
+[111089.662010] [19588]  1000 19588    55622        1    77824       65             0 bash
+[111089.662185] [19598]  1000 19598    57592        0    94208       45             0 sed
+[111089.662358] [19606]  1000 19606    55622        1    77824       66             0 bash
+[111089.662531] [19616]  1000 19616    57592        0    94208       42             0 sed
+[111089.662700] [19679]  1000 19679    55622        1    77824       64             0 bash
+[111089.662889] [19688]  1000 19688    57592        0    86016       46             0 sed
+[111089.663059] [24664]  1000 24664    58620       94    86016      421             0 bash
+[111089.663227] [24700]  1000 24700   656816   413673  4894720   187596             0 bash
+[111089.663418] [24702]  1000 24702    68573      203   155648        0             0 top
+[111089.663651] Out of memory: Killed process 24700 (bash) total-vm:2627264kB, anon-rss:1654692kB, file-rss:0kB, shmem-rss:0kB, UID:1000
+[111089.752576] oom_reaper: reaped process 24700 (bash), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB
+[113839.502822] tuned invoked oom-killer: gfp_mask=0x6200ca(GFP_HIGHUSER_MOVABLE), nodemask=(null), order=0, oom_score_adj=0
+[113839.503527] tuned cpuset=/ mems_allowed=0
+[113839.503734] CPU: 0 PID: 1093 Comm: tuned Kdump: loaded Tainted: G                 ---------r-  - 4.18.0-193.el8.x86_64 #1
+[113839.504213] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[113839.504446] Call Trace:
+[113839.504717]  dump_stack+0x5c/0x80
+[113839.505050]  dump_header+0x6e/0x27a
+[113839.505367]  ? try_to_free_pages+0xe8/0x1c0
+[113839.505641]  oom_kill_process.cold.29+0xb/0x10
+[113839.505873]  out_of_memory+0x1ba/0x490
+[113839.506071]  __alloc_pages_slowpath+0xc18/0xd00
+[113839.506262]  ? blk_finish_plug+0x21/0x2e
+[113839.506451]  __alloc_pages_nodemask+0x245/0x280
+[113839.506643]  filemap_fault+0x3d0/0x860
+[113839.506836]  ? alloc_set_pte+0x203/0x480
+[113839.507094]  ? filemap_map_pages+0x1ed/0x3b0
+[113839.507304]  ext4_filemap_fault+0x2c/0x40 [ext4]
+[113839.507506]  __do_fault+0x38/0xc0
+[113839.507707]  do_fault+0x191/0x3c0
+[113839.507911]  __handle_mm_fault+0x441/0x6a0
+[113839.508129]  handle_mm_fault+0xda/0x200
+[113839.508337]  __do_page_fault+0x22d/0x4e0
+[113839.508547]  do_page_fault+0x32/0x110
+[113839.508759]  ? page_fault+0x8/0x30
+[113839.508983]  page_fault+0x1e/0x30
+[113839.509197] RIP: 0033:0x7fcfd6d752b2
+[113839.509415] Code: Bad RIP value.
+[113839.509629] RSP: 002b:00007fcfbe790e10 EFLAGS: 00010297
+[113839.509850] RAX: 00007fcfd712c5c0 RBX: 00007fcfc8071dc4 RCX: 000000000000007c
+[113839.510092] RDX: 0000000000000000 RSI: 0000000000000072 RDI: 000000000000000d
+[113839.510326] RBP: 000056330e451668 R08: 000000000000007c R09: 0000000000000000
+[113839.510562] R10: 0000000000000000 R11: 000000000000007c R12: 000056330e484ed0
+[113839.510801] R13: 00007fcfd7097ac0 R14: 000056330e451818 R15: 00007fcfd6e09884
+[113839.511116] Mem-Info:
+[113839.511362] active_anon:315104 inactive_anon:105927 isolated_anon:0
+                 active_file:20 inactive_file:1034 isolated_file:0
+                 unevictable:0 dirty:0 writeback:0 unstable:0
+                 slab_reclaimable:6024 slab_unreclaimable:12034
+                 mapped:50 shmem:57 pagetables:3634 bounce:0
+                 free:13029 free_pcp:14 free_cma:0
+[113839.512868] Node 0 active_anon:1260416kB inactive_anon:423708kB active_file:80kB inactive_file:4136kB unevictable:0kB isolated(anon):0kB isolated(file):0kB mapped:200kB dirty:0kB writeback:0kB shmem:228kB shmem_thp: 0kB shmem_pmdmapped: 0kB anon_thp: 147456kB writeback_tmp:0kB unstable:0kB all_unreclaimable? no
+[113839.513834] Node 0 DMA free:7480kB min:376kB low:468kB high:560kB active_anon:7860kB inactive_anon:0kB active_file:0kB inactive_file:0kB unevictable:0kB writepending:0kB present:15992kB managed:15360kB mlocked:0kB kernel_stack:0kB pagetables:16kB bounce:0kB free_pcp:0kB local_pcp:0kB free_cma:0kB
+[113839.515055] lowmem_reserve[]: 0 1778 1778 1778 1778
+[113839.515345] Node 0 DMA32 free:44636kB min:44676kB low:55844kB high:67012kB active_anon:1252556kB inactive_anon:423708kB active_file:80kB inactive_file:4136kB unevictable:0kB writepending:0kB present:2080704kB managed:1855540kB mlocked:0kB kernel_stack:2544kB pagetables:14520kB bounce:0kB free_pcp:56kB local_pcp:56kB free_cma:0kB
+[113839.516635] lowmem_reserve[]: 0 0 0 0 0
+[113839.516966] Node 0 DMA: 2*4kB (UM) 2*8kB (UM) 0*16kB 1*32kB (U) 2*64kB (UM) 1*128kB (U) 2*256kB (UM) 1*512kB (U) 0*1024kB 1*2048kB (M) 1*4096kB (M) = 7480kB
+[113839.517665] Node 0 DMA32: 205*4kB (UE) 185*8kB (UME) 116*16kB (UME) 81*32kB (UE) 28*64kB (UE) 12*128kB (UME) 3*256kB (UE) 0*512kB 1*1024kB (U) 2*2048kB (UE) 7*4096kB (M) = 44636kB
+[113839.518411] Node 0 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=2048kB
+[113839.518852] 6236 total pagecache pages
+[113839.519242] 5110 pages in swap cache
+[113839.519617] Swap cache stats: add 400551, delete 395441, find 2885/3984
+[113839.520103] Free swap  = 0kB
+[113839.520484] Total swap = 839676kB
+[113839.520881] 524174 pages RAM
+[113839.521254] 0 pages HighMem/MovableOnly
+[113839.521635] 56449 pages reserved
+[113839.522009] 0 pages hwpoisoned
+[113839.522397] [ pid ]   uid  tgid total_vm      rss pgtables_bytes swapents oom_score_adj name
+[113839.522796] [  648]     0   648    23498       98   253952      231             0 systemd-journal
+[113839.523579] [  674]     0   674    27308       12   221184      784         -1000 systemd-udevd
+[113839.523969] [  796]    32   796    16780       37   176128      142             0 rpcbind
+[113839.524355] [  799]     0   799    18908       26   159744      124         -1000 auditd
+[113839.524817] [  827]     0   827   115688        0   397312      450             0 ModemManager
+[113839.525205] [  828]     0   828     6592       40    94208      264             0 smartd
+[113839.525601] [  829]     0   829   105552       14   430080      478             0 sssd
+[113839.525981] [  830]    70   830    20686       20   159744      100             0 avahi-daemon
+[113839.526371] [  832]   998   832   406720        0   323584     1441             0 polkitd
+[113839.526802] [  833]    81   833    17718      150   172032       91          -900 dbus-daemon
+[113839.527180] [  835]   997   835     4718       19    69632       19             0 lsmd
+[113839.527539] [  841]     0   841     4352       10    69632       27             0 mcelog
+[113839.527879] [  842]   991   842    40057       22   196608      179             0 rngd
+[113839.528228] [  845]     0   845    77886        4   180224      160             0 gssproxy
+[113839.528560] [  846]    70   846    20655        0   147456      108             0 avahi-daemon
+[113839.528881] [  862]     0   862   107209      132   442368      521             0 sssd_be
+[113839.529214] [  863]     0   863   107777      141   454656      283             0 sssd_nss
+[113839.529529] [  866]     0   866   124680        0   471040     5502             0 firewalld
+[113839.529827] [  867]     0   867    23926      199   212992      464             0 systemd-logind
+[113839.530135] [  883]     0   883   169522      228   397312      399             0 NetworkManager
+[113839.530470] [  891]     0   891   158766      113   450560     3595             0 tuned
+[113839.530755] [  892]     0   892    23242       10   204800      216         -1000 sshd
+[113839.531049] [ 1114]     0  1114    61471      104   110592      126             0 crond
+[113839.531318] [ 1115]     0  1115    10656       12   110592       41             0 atd
+[113839.531588] [ 1416]  1000  1416    23463       16   225280      349             0 systemd
+[113839.531840] [ 1421]  1000  1421    61716        4   315392     1335             0 (sd-pam)
+[113839.532105] [ 3960]     0  3960    33689        0   278528      229             0 login
+[113839.532362] [ 3967]  1000  3967    65053      114   131072      583             0 bash
+[113839.532607] [ 4328]  1000  4328    76943        1   233472      224             0 crontab
+[113839.532863] [ 4330]  1000  4330    61007        0   110592      128             0 vi
+[113839.533106] [ 4420]  1000  4420    76943        1   225280      224             0 crontab
+[113839.533387] [ 4422]  1000  4422    61007        0   110592      128             0 vi
+[113839.533659] [ 4473]  1000  4473    76943        1   229376      224             0 crontab
+[113839.533920] [ 4475]  1000  4475    61007        0   106496      127             0 vi
+[113839.534166] [ 4536]  1000  4536    55622        0    69632       60             0 bash
+[113839.534414] [ 7077]  1000  7077    55622        0    77824       59             0 bash
+[113839.534646] [ 7219]  1000  7219    55622        0    81920       64             0 bash
+[113839.534944] [ 7251]  1000  7251    55622        0    81920       60             0 bash
+[113839.535162] [ 7290]  1000  7290    55622        0    77824       63             0 bash
+[113839.535385] [ 7488]  1000  7488    55622        0    77824       63             0 bash
+[113839.535594] [ 7500]  1000  7500    55622        0    73728       63             0 bash
+[113839.535817] [ 7837]  1000  7837    55622        0    73728       63             0 bash
+[113839.536019] [ 7913]  1000  7913    55622        0    65536       63             0 bash
+[113839.536217] [ 7926]  1000  7926    55622        0    81920       63             0 bash
+[113839.536421] [ 8046]  1000  8046    76944        1   221184      224             0 crontab
+[113839.536615] [ 8048]  1000  8048    61007        0   110592      127             0 vi
+[113839.536823] [ 8074]  1000  8074    55622        0    81920       63             0 bash
+[113839.537013] [ 8085]  1000  8085    76943        1   237568      224             0 crontab
+[113839.537212] [ 8087]  1000  8087    61007        0   110592      127             0 vi
+[113839.537404] [ 8447]  1000  8447    76942        0   225280      221             0 crontab
+[113839.537593] [ 8449]  1000  8449    76944        1   233472      225             0 crontab
+[113839.537797] [ 8451]  1000  8451    61007        0   102400      126             0 vi
+[113839.537982] [ 8457]  1000  8457    54264        0    65536       27             0 wc
+[113839.538166] [11713]     0 11713    56448        2    73728       27             0 agetty
+[113839.538362] [11714]     0 11714    33689       13   274432      228             0 login
+[113839.538545] [11715]     0 11715    56448        1    73728       27             0 agetty
+[113839.538742] [12071]  1000 12071    54271        0    65536       27             0 wc
+[113839.538923] [16158]  1000 16158    55475        0    77824       40             0 grep
+[113839.539102] [16165]  1000 16165    55475        0    73728       39             0 grep
+[113839.539296] [19588]  1000 19588    55622        1    77824       65             0 bash
+[113839.539473] [19598]  1000 19598    57592        0    94208       45             0 sed
+[113839.539647] [19606]  1000 19606    55622        1    77824       66             0 bash
+[113839.539820] [19616]  1000 19616    57592        0    94208       42             0 sed
+[113839.539990] [19679]  1000 19679    55622        1    77824       64             0 bash
+[113839.540192] [19688]  1000 19688    57592        0    86016       46             0 sed
+[113839.540403] [24664]  1000 24664    58653       60    86016      487             0 bash
+[113839.540570] [24813]  1000 24813    54296        0    61440       55             0 cat
+[113839.540738] [24858]  1000 24858   654440   413748  4874240   185130             0 bash
+[113839.540906] [24870]  1000 24870    68573      191   155648       13             0 top
+[113839.541076] Out of memory: Killed process 24858 (bash) total-vm:2617760kB, anon-rss:1654992kB, file-rss:0kB, shmem-rss:0kB, UID:1000
+[113839.632135] oom_reaper: reaped process 24858 (bash), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB
+[114701.078932] bash invoked oom-killer: gfp_mask=0x6200ca(GFP_HIGHUSER_MOVABLE), nodemask=(null), order=0, oom_score_adj=0
+[114701.079681] bash cpuset=/ mems_allowed=0
+[114701.079879] CPU: 0 PID: 24944 Comm: bash Kdump: loaded Tainted: G                 ---------r-  - 4.18.0-193.el8.x86_64 #1
+[114701.080294] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[114701.080501] Call Trace:
+[114701.080693]  dump_stack+0x5c/0x80
+[114701.080882]  dump_header+0x6e/0x27a
+[114701.081062]  ? try_to_free_pages+0xe8/0x1c0
+[114701.081241]  oom_kill_process.cold.29+0xb/0x10
+[114701.081422]  out_of_memory+0x1ba/0x490
+[114701.081607]  __alloc_pages_slowpath+0xc18/0xd00
+[114701.081804]  ? blk_finish_plug+0x21/0x2e
+[114701.081997]  __alloc_pages_nodemask+0x245/0x280
+[114701.082216]  filemap_fault+0x3d0/0x860
+[114701.082410]  ? alloc_set_pte+0x38a/0x480
+[114701.082660]  ? filemap_map_pages+0x139/0x3b0
+[114701.082905]  ext4_filemap_fault+0x2c/0x40 [ext4]
+[114701.083109]  __do_fault+0x38/0xc0
+[114701.083312]  do_fault+0x191/0x3c0
+[114701.083515]  ? __switch_to_asm+0x35/0x70
+[114701.083721]  __handle_mm_fault+0x441/0x6a0
+[114701.083997]  handle_mm_fault+0xda/0x200
+[114701.084208]  __do_page_fault+0x22d/0x4e0
+[114701.084420]  do_page_fault+0x32/0x110
+[114701.084633]  ? page_fault+0x8/0x30
+[114701.084948]  page_fault+0x1e/0x30
+[114701.085162] RIP: 0033:0x55a83f4a5a00
+[114701.085408] Code: Bad RIP value.
+[114701.085651] RSP: 002b:00007ffcbdbce968 EFLAGS: 00010246
+[114701.085886] RAX: 0000000000000000 RBX: 000055a83fbeae60 RCX: 0000000000000000
+[114701.086120] RDX: 0000000000000008 RSI: 00007ffcbdbce8b0 RDI: 000055a83fbe8b70
+[114701.086357] RBP: 0000000000000008 R08: 000055a83fbdc010 R09: 0000000000000006
+[114701.086597] R10: 0000000000000008 R11: 0000000000000246 R12: 00007ffcbdbcea00
+[114701.086851] R13: 0000000000000000 R14: 0000000000000012 R15: 0000000000000001
+[114701.087137] Mem-Info:
+[114701.087370] active_anon:315877 inactive_anon:105960 isolated_anon:0
+                 active_file:26 inactive_file:1198 isolated_file:0
+                 unevictable:0 dirty:0 writeback:0 unstable:0
+                 slab_reclaimable:6035 slab_unreclaimable:12043
+                 mapped:37 shmem:35 pagetables:3633 bounce:0
+                 free:13038 free_pcp:14 free_cma:0
+[114701.088741] Node 0 active_anon:1263508kB inactive_anon:423840kB active_file:104kB inactive_file:4792kB unevictable:0kB isolated(anon):0kB isolated(file):0kB mapped:148kB dirty:0kB writeback:0kB shmem:140kB shmem_thp: 0kB shmem_pmdmapped: 0kB anon_thp: 137216kB writeback_tmp:0kB unstable:0kB all_unreclaimable? no
+[114701.089713] Node 0 DMA free:7484kB min:376kB low:468kB high:560kB active_anon:7856kB inactive_anon:0kB active_file:0kB inactive_file:0kB unevictable:0kB writepending:0kB present:15992kB managed:15360kB mlocked:0kB kernel_stack:0kB pagetables:16kB bounce:0kB free_pcp:0kB local_pcp:0kB free_cma:0kB
+[114701.090821] lowmem_reserve[]: 0 1778 1778 1778 1778
+[114701.091107] Node 0 DMA32 free:44668kB min:44676kB low:55844kB high:67012kB active_anon:1255652kB inactive_anon:423840kB active_file:104kB inactive_file:4792kB unevictable:0kB writepending:0kB present:2080704kB managed:1855540kB mlocked:0kB kernel_stack:2528kB pagetables:14516kB bounce:0kB free_pcp:56kB local_pcp:56kB free_cma:0kB
+[114701.092473] lowmem_reserve[]: 0 0 0 0 0
+[114701.092811] Node 0 DMA: 1*4kB (U) 1*8kB (U) 1*16kB (M) 1*32kB (U) 2*64kB (UM) 1*128kB (U) 2*256kB (UM) 1*512kB (U) 0*1024kB 1*2048kB (M) 1*4096kB (M) = 7484kB
+[114701.093489] Node 0 DMA32: 179*4kB (UME) 186*8kB (UE) 122*16kB (UE) 86*32kB (UE) 24*64kB (UE) 11*128kB (UE) 4*256kB (UME) 0*512kB 1*1024kB (U) 2*2048kB (UE) 7*4096kB (M) = 44668kB
+[114701.094225] Node 0 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=2048kB
+[114701.094613] 7614 total pagecache pages
+[114701.094986] 6361 pages in swap cache
+[114701.095357] Swap cache stats: add 587513, delete 581152, find 4681/6694
+[114701.095746] Free swap  = 0kB
+[114701.096144] Total swap = 839676kB
+[114701.096531] 524174 pages RAM
+[114701.096904] 0 pages HighMem/MovableOnly
+[114701.097294] 56449 pages reserved
+[114701.097735] 0 pages hwpoisoned
+[114701.098204] [ pid ]   uid  tgid total_vm      rss pgtables_bytes swapents oom_score_adj name
+[114701.098605] [  648]     0   648    23498       91   253952      227             0 systemd-journal
+[114701.099409] [  674]     0   674    27308       18   221184      778         -1000 systemd-udevd
+[114701.099952] [  796]    32   796    16780       22   176128      157             0 rpcbind
+[114701.100394] [  799]     0   799    18908       41   159744      122         -1000 auditd
+[114701.100937] [  827]     0   827   115688        0   397312      460             0 ModemManager
+[114701.101355] [  828]     0   828     6592        8    94208      296             0 smartd
+[114701.101763] [  829]     0   829   105552       14   430080      478             0 sssd
+[114701.102143] [  830]    70   830    20686       14   159744      106             0 avahi-daemon
+[114701.102775] [  832]   998   832   406720       46   323584     1385             0 polkitd
+[114701.103527] [  833]    81   833    17718       84   172032      157          -900 dbus-daemon
+[114701.104199] [  835]   997   835     4718       14    69632       24             0 lsmd
+[114701.104886] [  841]     0   841     4352       10    69632       27             0 mcelog
+[114701.105532] [  842]   991   842    40057        0   196608      201             0 rngd
+[114701.106172] [  845]     0   845    77886        0   180224      165             0 gssproxy
+[114701.106805] [  846]    70   846    20655        0   147456      108             0 avahi-daemon
+[114701.107415] [  862]     0   862   107209       18   442368      635             0 sssd_be
+[114701.108021] [  863]     0   863   107777       85   454656      339             0 sssd_nss
+[114701.108599] [  866]     0   866   124680        0   471040     5502             0 firewalld
+[114701.109178] [  867]     0   867    23926      126   212992      537             0 systemd-logind
+[114701.109715] [  883]     0   883   169522      220   397312      436             0 NetworkManager
+[114701.110274] [  891]     0   891   158766      113   450560     3595             0 tuned
+[114701.110798] [  892]     0   892    23242        0   204800      226         -1000 sshd
+[114701.111326] [ 1114]     0  1114    61471       60   110592      170             0 crond
+[114701.111819] [ 1115]     0  1115    10656        4   110592       48             0 atd
+[114701.112312] [ 1416]  1000  1416    23463        1   225280      363             0 systemd
+[114701.112772] [ 1421]  1000  1421    61716        4   315392     1335             0 (sd-pam)
+[114701.113239] [ 3960]     0  3960    33689        0   278528      232             0 login
+[114701.113690] [ 3967]  1000  3967    65053       81   131072      619             0 bash
+[114701.114152] [ 4328]  1000  4328    76943        1   233472      224             0 crontab
+[114701.114590] [ 4330]  1000  4330    61007        0   110592      128             0 vi
+[114701.115058] [ 4420]  1000  4420    76943        1   225280      224             0 crontab
+[114701.115501] [ 4422]  1000  4422    61007        0   110592      128             0 vi
+[114701.115941] [ 4473]  1000  4473    76943        1   229376      224             0 crontab
+[114701.116403] [ 4475]  1000  4475    61007        0   106496      127             0 vi
+[114701.116845] [ 4536]  1000  4536    55622        0    69632       60             0 bash
+[114701.117297] [ 7077]  1000  7077    55622        0    77824       59             0 bash
+[114701.117713] [ 7219]  1000  7219    55622        0    81920       64             0 bash
+[114701.118139] [ 7251]  1000  7251    55622        0    81920       60             0 bash
+[114701.118530] [ 7290]  1000  7290    55622        0    77824       63             0 bash
+[114701.118931] [ 7488]  1000  7488    55622        0    77824       63             0 bash
+[114701.119305] [ 7500]  1000  7500    55622        0    73728       63             0 bash
+[114701.119671] [ 7837]  1000  7837    55622        0    73728       63             0 bash
+[114701.120050] [ 7913]  1000  7913    55622        0    65536       63             0 bash
+[114701.120405] [ 7926]  1000  7926    55622        0    81920       63             0 bash
+[114701.120753] [ 8046]  1000  8046    76944        1   221184      224             0 crontab
+[114701.121122] [ 8048]  1000  8048    61007        0   110592      127             0 vi
+[114701.121465] [ 8074]  1000  8074    55622        0    81920       63             0 bash
+[114701.121803] [ 8085]  1000  8085    76943        1   237568      224             0 crontab
+[114701.122168] [ 8087]  1000  8087    61007        0   110592      127             0 vi
+[114701.122509] [ 8447]  1000  8447    76942        0   225280      221             0 crontab
+[114701.122870] [ 8449]  1000  8449    76944        1   233472      225             0 crontab
+[114701.123207] [ 8451]  1000  8451    61007        0   102400      126             0 vi
+[114701.123539] [ 8457]  1000  8457    54264        0    65536       27             0 wc
+[114701.123894] [11713]     0 11713    56448        2    73728       27             0 agetty
+[114701.124227] [11714]     0 11714    33689       10   274432      231             0 login
+[114701.124556] [11715]     0 11715    56448        1    73728       27             0 agetty
+[114701.124906] [12071]  1000 12071    54271        0    65536       27             0 wc
+[114701.125230] [16158]  1000 16158    55475        0    77824       40             0 grep
+[114701.125552] [16165]  1000 16165    55475        0    73728       39             0 grep
+[114701.125889] [19588]  1000 19588    55622        1    77824       65             0 bash
+[114701.126207] [19598]  1000 19598    57592        0    94208       45             0 sed
+[114701.126519] [19606]  1000 19606    55622        1    77824       66             0 bash
+[114701.126880] [19616]  1000 19616    57592        0    94208       42             0 sed
+[114701.127187] [19679]  1000 19679    55622        1    77824       64             0 bash
+[114701.127492] [19688]  1000 19688    57592        0    86016       46             0 sed
+[114701.127812] [24664]  1000 24664    58653        4    86016      543             0 bash
+[114701.128114] [24813]  1000 24813    54296        0    61440       55             0 cat
+[114701.128414] [24870]  1000 24870    68573      107   155648       97             0 top
+[114701.128732] [24944]  1000 24944   654011   413824  4870144   184621             0 bash
+[114701.129037] Out of memory: Killed process 24944 (bash) total-vm:2616044kB, anon-rss:1655296kB, file-rss:0kB, shmem-rss:0kB, UID:1000
+[114701.258154] oom_reaper: reaped process 24944 (bash), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB
+[116855.315423] tuned invoked oom-killer: gfp_mask=0x6200ca(GFP_HIGHUSER_MOVABLE), nodemask=(null), order=0, oom_score_adj=0
+[116855.315912] tuned cpuset=/ mems_allowed=0
+[116855.316116] CPU: 0 PID: 1093 Comm: tuned Kdump: loaded Tainted: G                 ---------r-  - 4.18.0-193.el8.x86_64 #1
+[116855.316532] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[116855.316747] Call Trace:
+[116855.316954]  dump_stack+0x5c/0x80
+[116855.317149]  dump_header+0x6e/0x27a
+[116855.317347]  ? try_to_free_pages+0xe8/0x1c0
+[116855.317543]  oom_kill_process.cold.29+0xb/0x10
+[116855.317728]  out_of_memory+0x1ba/0x490
+[116855.317912]  __alloc_pages_slowpath+0xc18/0xd00
+[116855.318100]  __alloc_pages_nodemask+0x245/0x280
+[116855.318289]  filemap_fault+0x3d0/0x860
+[116855.318488]  ? alloc_set_pte+0x38a/0x480
+[116855.318682]  ? filemap_map_pages+0x139/0x3b0
+[116855.318887]  ext4_filemap_fault+0x2c/0x40 [ext4]
+[116855.319084]  __do_fault+0x38/0xc0
+[116855.319280]  do_fault+0x191/0x3c0
+[116855.319488]  __handle_mm_fault+0x441/0x6a0
+[116855.319691]  handle_mm_fault+0xda/0x200
+[116855.319893]  __do_page_fault+0x22d/0x4e0
+[116855.320098]  do_page_fault+0x32/0x110
+[116855.320304]  ? page_fault+0x8/0x30
+[116855.320521]  page_fault+0x1e/0x30
+[116855.320731] RIP: 0033:0x7fcfd6d75246
+[116855.320942] Code: Bad RIP value.
+[116855.321151] RSP: 002b:00007fcfbe7910f0 EFLAGS: 00010206
+[116855.321369] RAX: 00007fcfd712c5c0 RBX: 00007fcfc7b02de2 RCX: 0000000000000001
+[116855.321605] RDX: 00007fcfd70fec80 RSI: 0000000000000000 RDI: 000000000000000d
+[116855.321832] RBP: 00007fcfbf579438 R08: 00000000000001a0 R09: 00007fcfbf5795c8
+[116855.322061] R10: 0000000000000001 R11: 000000000000007a R12: 000056330e484ed0
+[116855.322295] R13: 00007fcfbf5795e0 R14: 00007fcfbf5795e0 R15: 0000000000000000
+[116855.322584] Mem-Info:
+[116855.322825] active_anon:315445 inactive_anon:105934 isolated_anon:0
+                 active_file:13 inactive_file:1019 isolated_file:0
+                 unevictable:0 dirty:0 writeback:0 unstable:0
+                 slab_reclaimable:6057 slab_unreclaimable:12039
+                 mapped:63 shmem:74 pagetables:3632 bounce:0
+                 free:13032 free_pcp:48 free_cma:0
+[116855.324288] Node 0 active_anon:1261780kB inactive_anon:423736kB active_file:52kB inactive_file:4076kB unevictable:0kB isolated(anon):0kB isolated(file):0kB mapped:252kB dirty:0kB writeback:0kB shmem:296kB shmem_thp: 0kB shmem_pmdmapped: 0kB anon_thp: 151552kB writeback_tmp:0kB unstable:0kB all_unreclaimable? no
+[116855.325273] Node 0 DMA free:7480kB min:376kB low:468kB high:560kB active_anon:7860kB inactive_anon:0kB active_file:0kB inactive_file:0kB unevictable:0kB writepending:0kB present:15992kB managed:15360kB mlocked:0kB kernel_stack:0kB pagetables:16kB bounce:0kB free_pcp:0kB local_pcp:0kB free_cma:0kB
+[116855.326409] lowmem_reserve[]: 0 1778 1778 1778 1778
+[116855.326700] Node 0 DMA32 free:44648kB min:44676kB low:55844kB high:67012kB active_anon:1253920kB inactive_anon:423736kB active_file:52kB inactive_file:4076kB unevictable:0kB writepending:0kB present:2080704kB managed:1855540kB mlocked:0kB kernel_stack:2528kB pagetables:14512kB bounce:0kB free_pcp:192kB local_pcp:192kB free_cma:0kB
+[116855.327970] lowmem_reserve[]: 0 0 0 0 0
+[116855.328301] Node 0 DMA: 6*4kB (UM) 2*8kB (UM) 1*16kB (U) 0*32kB 2*64kB (UM) 1*128kB (U) 2*256kB (UM) 1*512kB (U) 0*1024kB 1*2048kB (M) 1*4096kB (M) = 7480kB
+[116855.329003] Node 0 DMA32: 182*4kB (UME) 186*8kB (UE) 116*16kB (UE) 82*32kB (UME) 27*64kB (UME) 13*128kB (UE) 3*256kB (ME) 0*512kB 1*1024kB (U) 2*2048kB (UE) 7*4096kB (M) = 44648kB
+[116855.329754] Node 0 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=2048kB
+[116855.330130] 9035 total pagecache pages
+[116855.330514] 7910 pages in swap cache
+[116855.330906] Swap cache stats: add 774799, delete 766889, find 10025/12889
+[116855.331300] Free swap  = 0kB
+[116855.331700] Total swap = 839676kB
+[116855.332083] 524174 pages RAM
+[116855.332475] 0 pages HighMem/MovableOnly
+[116855.332851] 56449 pages reserved
+[116855.333246] 0 pages hwpoisoned
+[116855.333618] [ pid ]   uid  tgid total_vm      rss pgtables_bytes swapents oom_score_adj name
+[116855.334007] [  648]     0   648    23498       99   253952      226             0 systemd-journal
+[116855.334786] [  674]     0   674    27308        8   221184      788         -1000 systemd-udevd
+[116855.335186] [  796]    32   796    16780       18   176128      161             0 rpcbind
+[116855.335591] [  799]     0   799    18908       39   159744      124         -1000 auditd
+[116855.335982] [  827]     0   827   115688        0   397312      461             0 ModemManager
+[116855.336390] [  828]     0   828     6592        8    94208      296             0 smartd
+[116855.336777] [  829]     0   829   105552       15   430080      477             0 sssd
+[116855.337211] [  830]    70   830    20686       30   159744       92             0 avahi-daemon
+[116855.337576] [  832]   998   832   406720      104   323584     1327             0 polkitd
+[116855.337932] [  833]    81   833    17718      128   172032      113          -900 dbus-daemon
+[116855.338329] [  835]   997   835     4718       13    69632       25             0 lsmd
+[116855.338670] [  841]     0   841     4352       11    69632       26             0 mcelog
+[116855.339047] [  842]   991   842    40057        0   196608      204             0 rngd
+[116855.339372] [  845]     0   845    77886        0   180224      168             0 gssproxy
+[116855.339687] [  846]    70   846    20655        1   147456      107             0 avahi-daemon
+[116855.340047] [  862]     0   862   107209       19   442368      634             0 sssd_be
+[116855.340356] [  863]     0   863   107777       84   454656      340             0 sssd_nss
+[116855.340654] [  866]     0   866   124680        0   471040     5501             0 firewalld
+[116855.340988] [  867]     0   867    23926      203   212992      460             0 systemd-logind
+[116855.341274] [  883]     0   883   169522       98   397312      558             0 NetworkManager
+[116855.341558] [  891]     0   891   158766      119   450560     3591             0 tuned
+[116855.341836] [  892]     0   892    23242        0   204800      229         -1000 sshd
+[116855.342152] [ 1114]     0  1114    61471       64   110592      166             0 crond
+[116855.342414] [ 1115]     0  1115    10656        2   110592       50             0 atd
+[116855.342666] [ 1416]  1000  1416    23463        0   225280      372             0 systemd
+[116855.342958] [ 1421]  1000  1421    61716        5   315392     1334             0 (sd-pam)
+[116855.343200] [ 3960]     0  3960    33689        0   278528      235             0 login
+[116855.343442] [ 3967]  1000  3967    65053       44   131072      659             0 bash
+[116855.343679] [ 4328]  1000  4328    76943        1   233472      224             0 crontab
+[116855.343987] [ 4330]  1000  4330    61007        0   110592      128             0 vi
+[116855.344223] [ 4420]  1000  4420    76943        1   225280      224             0 crontab
+[116855.344459] [ 4422]  1000  4422    61007        0   110592      128             0 vi
+[116855.344696] [ 4473]  1000  4473    76943        1   229376      224             0 crontab
+[116855.344980] [ 4475]  1000  4475    61007        0   106496      127             0 vi
+[116855.345218] [ 4536]  1000  4536    55622        0    69632       60             0 bash
+[116855.345450] [ 7077]  1000  7077    55622        0    77824       59             0 bash
+[116855.345674] [ 7219]  1000  7219    55622        0    81920       64             0 bash
+[116855.345940] [ 7251]  1000  7251    55622        0    81920       60             0 bash
+[116855.346152] [ 7290]  1000  7290    55622        0    77824       63             0 bash
+[116855.346358] [ 7488]  1000  7488    55622        0    77824       63             0 bash
+[116855.346561] [ 7500]  1000  7500    55622        0    73728       63             0 bash
+[116855.346803] [ 7837]  1000  7837    55622        0    73728       63             0 bash
+[116855.347001] [ 7913]  1000  7913    55622        0    65536       63             0 bash
+[116855.347193] [ 7926]  1000  7926    55622        0    81920       63             0 bash
+[116855.347381] [ 8046]  1000  8046    76944        1   221184      224             0 crontab
+[116855.347568] [ 8048]  1000  8048    61007        0   110592      127             0 vi
+[116855.347785] [ 8074]  1000  8074    55622        0    81920       63             0 bash
+[116855.347983] [ 8085]  1000  8085    76943        1   237568      224             0 crontab
+[116855.348168] [ 8087]  1000  8087    61007        0   110592      127             0 vi
+[116855.348352] [ 8447]  1000  8447    76942        0   225280      221             0 crontab
+[116855.348535] [ 8449]  1000  8449    76944        1   233472      225             0 crontab
+[116855.348748] [ 8451]  1000  8451    61007        0   102400      126             0 vi
+[116855.348946] [ 8457]  1000  8457    54264        0    65536       27             0 wc
+[116855.349126] [11713]     0 11713    56448        3    73728       26             0 agetty
+[116855.349306] [11714]     0 11714    33689        7   274432      234             0 login
+[116855.349485] [11715]     0 11715    56448        2    73728       26             0 agetty
+[116855.349662] [12071]  1000 12071    54271        0    65536       27             0 wc
+[116855.349884] [16158]  1000 16158    55475        0    77824       40             0 grep
+[116855.350059] [16165]  1000 16165    55475        0    73728       39             0 grep
+[116855.350229] [19588]  1000 19588    55622        1    77824       65             0 bash
+[116855.350401] [19598]  1000 19598    57592        0    94208       45             0 sed
+[116855.350569] [19606]  1000 19606    55622        1    77824       66             0 bash
+[116855.350784] [19616]  1000 19616    57592        0    94208       42             0 sed
+[116855.350952] [19679]  1000 19679    55622        1    77824       64             0 bash
+[116855.351117] [19688]  1000 19688    57592        0    86016       46             0 sed
+[116855.351282] [24664]  1000 24664    58653       25    86016      522             0 bash
+[116855.351446] [24813]  1000 24813    54296        0    61440       55             0 cat
+[116855.351609] [25189]  1000 25189   651998   411723  4861952   184668             0 bash
+[116855.351820] [25203]  1000 25203    68573      125   167936       79             0 top
+[116855.351989] Out of memory: Killed process 25189 (bash) total-vm:2607992kB, anon-rss:1646892kB, file-rss:0kB, shmem-rss:0kB, UID:1000
+[116855.445688] oom_reaper: reaped process 25189 (bash), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB
+[117483.895239] e1000: enp0s3 NIC Link is Down
+[117485.943168] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[120824.308760] tuned invoked oom-killer: gfp_mask=0x6200ca(GFP_HIGHUSER_MOVABLE), nodemask=(null), order=0, oom_score_adj=0
+[120824.309423] tuned cpuset=/ mems_allowed=0
+[120824.309634] CPU: 0 PID: 1093 Comm: tuned Kdump: loaded Tainted: G                 ---------r-  - 4.18.0-193.el8.x86_64 #1
+[120824.310072] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[120824.310331] Call Trace:
+[120824.310569]  dump_stack+0x5c/0x80
+[120824.310771]  dump_header+0x6e/0x27a
+[120824.310973]  ? try_to_free_pages+0xe8/0x1c0
+[120824.311155]  oom_kill_process.cold.29+0xb/0x10
+[120824.311349]  out_of_memory+0x1ba/0x490
+[120824.311534]  __alloc_pages_slowpath+0xc18/0xd00
+[120824.311722]  __alloc_pages_nodemask+0x245/0x280
+[120824.311924]  filemap_fault+0x3d0/0x860
+[120824.312115]  ? alloc_set_pte+0x203/0x480
+[120824.312317]  ? filemap_map_pages+0x1ed/0x3b0
+[120824.312534]  ext4_filemap_fault+0x2c/0x40 [ext4]
+[120824.312733]  __do_fault+0x38/0xc0
+[120824.312942]  do_fault+0x191/0x3c0
+[120824.313200]  __handle_mm_fault+0x441/0x6a0
+[120824.313478]  handle_mm_fault+0xda/0x200
+[120824.313894]  __do_page_fault+0x22d/0x4e0
+[120824.314196]  do_page_fault+0x32/0x110
+[120824.314418]  ? page_fault+0x8/0x30
+[120824.314700]  page_fault+0x1e/0x30
+[120824.314922] RIP: 0033:0x7fcfd6ce4c30
+[120824.315203] Code: Bad RIP value.
+[120824.315442] RSP: 002b:00007fcfbe7914d8 EFLAGS: 00010213
+[120824.315659] RAX: 00007fcfd70f9780 RBX: 00007fcfbfa8e730 RCX: 0000000000000000
+[120824.315895] RDX: 00007fcfd70f5b00 RSI: 00007fcfbfa8e730 RDI: 00007fcfbf5bd708
+[120824.316160] RBP: 00007fcfbf5bd708 R08: 00007fcfd7122770 R09: 00007fcfc02a8a08
+[120824.316391] R10: 0000000000000014 R11: 000000000000006a R12: 608b78ffef26ecfc
+[120824.316626] R13: 00007fcfbf581510 R14: 000056330e41a6c8 R15: 00007fcfbf5b8710
+[120824.316943] Mem-Info:
+[120824.317214] active_anon:315494 inactive_anon:106211 isolated_anon:0
+                 active_file:41 inactive_file:549 isolated_file:0
+                 unevictable:0 dirty:0 writeback:0 unstable:0
+                 slab_reclaimable:6063 slab_unreclaimable:12043
+                 mapped:26 shmem:26 pagetables:3632 bounce:0
+                 free:13035 free_pcp:49 free_cma:0
+[120824.318756] Node 0 active_anon:1261976kB inactive_anon:424844kB active_file:164kB inactive_file:2196kB unevictable:0kB isolated(anon):0kB isolated(file):0kB mapped:104kB dirty:0kB writeback:0kB shmem:104kB shmem_thp: 0kB shmem_pmdmapped: 0kB anon_thp: 135168kB writeback_tmp:0kB unstable:0kB all_unreclaimable? no
+[120824.319758] Node 0 DMA free:7484kB min:376kB low:468kB high:560kB active_anon:7856kB inactive_anon:0kB active_file:0kB inactive_file:0kB unevictable:0kB writepending:0kB present:15992kB managed:15360kB mlocked:0kB kernel_stack:0kB pagetables:16kB bounce:0kB free_pcp:0kB local_pcp:0kB free_cma:0kB
+[120824.321100] lowmem_reserve[]: 0 1778 1778 1778 1778
+[120824.321421] Node 0 DMA32 free:44656kB min:44676kB low:55844kB high:67012kB active_anon:1254120kB inactive_anon:424844kB active_file:164kB inactive_file:2196kB unevictable:0kB writepending:0kB present:2080704kB managed:1855540kB mlocked:0kB kernel_stack:2528kB pagetables:14512kB bounce:0kB free_pcp:196kB local_pcp:196kB free_cma:0kB
+[120824.322707] lowmem_reserve[]: 0 0 0 0 0
+[120824.323050] Node 0 DMA: 3*4kB (UM) 2*8kB (UM) 0*16kB 1*32kB (U) 2*64kB (UM) 1*128kB (U) 2*256kB (UM) 1*512kB (U) 0*1024kB 1*2048kB (M) 1*4096kB (M) = 7484kB
+[120824.323758] Node 0 DMA32: 148*4kB (UME) 176*8kB (UE) 120*16kB (UME) 89*32kB (UE) 26*64kB (UME) 11*128kB (ME) 4*256kB (UME) 0*512kB 1*1024kB (U) 2*2048kB (UE) 7*4096kB (M) = 44656kB
+[120824.324521] Node 0 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=2048kB
+[120824.325005] 7713 total pagecache pages
+[120824.325402] 7086 pages in swap cache
+[120824.325778] Swap cache stats: add 962657, delete 955571, find 13312/17529
+[120824.326181] Free swap  = 0kB
+[120824.326584] Total swap = 839676kB
+[120824.326984] 524174 pages RAM
+[120824.327377] 0 pages HighMem/MovableOnly
+[120824.327890] 56449 pages reserved
+[120824.328305] 0 pages hwpoisoned
+[120824.328696] [ pid ]   uid  tgid total_vm      rss pgtables_bytes swapents oom_score_adj name
+[120824.329134] [  648]     0   648    23498       47   253952      244             0 systemd-journal
+[120824.329989] [  674]     0   674    27308       13   221184      783         -1000 systemd-udevd
+[120824.330380] [  796]    32   796    16780       11   176128      168             0 rpcbind
+[120824.330787] [  799]     0   799    18908       40   159744      123         -1000 auditd
+[120824.331187] [  827]     0   827   115688        0   397312      461             0 ModemManager
+[120824.331595] [  828]     0   828     6592        1    94208      303             0 smartd
+[120824.332003] [  829]     0   829   105552       78   430080      414             0 sssd
+[120824.332401] [  830]    70   830    20686       23   159744       99             0 avahi-daemon
+[120824.332785] [  832]   998   832   406720       34   323584     1397             0 polkitd
+[120824.333162] [  833]    81   833    17718       39   172032      202          -900 dbus-daemon
+[120824.333540] [  835]   997   835     4718       10    69632       28             0 lsmd
+[120824.333909] [  841]     0   841     4352       11    69632       26             0 mcelog
+[120824.334251] [  842]   991   842    40057        0   196608      206             0 rngd
+[120824.334666] [  845]     0   845    77886        0   180224      168             0 gssproxy
+[120824.335114] [  846]    70   846    20655        1   147456      107             0 avahi-daemon
+[120824.335437] [  862]     0   862   107209      118   442368      535             0 sssd_be
+[120824.335782] [  863]     0   863   107777       98   454656      326             0 sssd_nss
+[120824.336100] [  866]     0   866   124680        0   471040     5501             0 firewalld
+[120824.336415] [  867]     0   867    23926      101   212992      562             0 systemd-logind
+[120824.336717] [  883]     0   883   169522      164   397312      492             0 NetworkManager
+[120824.337020] [  891]     0   891   158766      132   450560     3578             0 tuned
+[120824.337303] [  892]     0   892    23242        0   204800      229         -1000 sshd
+[120824.337637] [ 1114]     0  1114    61471       48   110592      182             0 crond
+[120824.337918] [ 1115]     0  1115    10656        5   110592       47             0 atd
+[120824.338177] [ 1416]  1000  1416    23463        6   225280      358             0 systemd
+[120824.338447] [ 1421]  1000  1421    61716        4   315392     1335             0 (sd-pam)
+[120824.338703] [ 3960]     0  3960    33689        0   278528      235             0 login
+[120824.338962] [ 3967]  1000  3967    65053       82   131072      621             0 bash
+[120824.339206] [ 4328]  1000  4328    76943        1   233472      224             0 crontab
+[120824.339463] [ 4330]  1000  4330    61007        0   110592      128             0 vi
+[120824.339714] [ 4420]  1000  4420    76943        1   225280      224             0 crontab
+[120824.339968] [ 4422]  1000  4422    61007        0   110592      128             0 vi
+[120824.340209] [ 4473]  1000  4473    76943        1   229376      224             0 crontab
+[120824.340470] [ 4475]  1000  4475    61007        0   106496      127             0 vi
+[120824.340725] [ 4536]  1000  4536    55622        0    69632       60             0 bash
+[120824.340973] [ 7077]  1000  7077    55622        0    77824       59             0 bash
+[120824.341203] [ 7219]  1000  7219    55622        0    81920       64             0 bash
+[120824.341545] [ 7251]  1000  7251    55622        0    81920       60             0 bash
+[120824.341778] [ 7290]  1000  7290    55622        0    77824       63             0 bash
+[120824.342012] [ 7488]  1000  7488    55622        0    77824       63             0 bash
+[120824.342219] [ 7500]  1000  7500    55622        0    73728       63             0 bash
+[120824.342444] [ 7837]  1000  7837    55622        0    73728       63             0 bash
+[120824.342645] [ 7913]  1000  7913    55622        0    65536       63             0 bash
+[120824.342841] [ 7926]  1000  7926    55622        0    81920       63             0 bash
+[120824.343045] [ 8046]  1000  8046    76944        1   221184      224             0 crontab
+[120824.343237] [ 8048]  1000  8048    61007        0   110592      127             0 vi
+[120824.343482] [ 8074]  1000  8074    55622        0    81920       63             0 bash
+[120824.343700] [ 8085]  1000  8085    76943        1   237568      224             0 crontab
+[120824.343888] [ 8087]  1000  8087    61007        0   110592      127             0 vi
+[120824.344089] [ 8447]  1000  8447    76942        0   225280      221             0 crontab
+[120824.344278] [ 8449]  1000  8449    76944        1   233472      225             0 crontab
+[120824.344485] [ 8451]  1000  8451    61007        0   102400      126             0 vi
+[120824.344707] [ 8457]  1000  8457    54264        0    65536       27             0 wc
+[120824.344899] [11713]     0 11713    56448        3    73728       26             0 agetty
+[120824.345086] [11714]     0 11714    33689        7   274432      234             0 login
+[120824.345268] [11715]     0 11715    56448        2    73728       26             0 agetty
+[120824.345502] [12071]  1000 12071    54271        0    65536       27             0 wc
+[120824.345683] [16158]  1000 16158    55475        0    77824       40             0 grep
+[120824.345861] [16165]  1000 16165    55475        0    73728       39             0 grep
+[120824.346049] [19588]  1000 19588    55622        1    77824       65             0 bash
+[120824.346225] [19598]  1000 19598    57592        0    94208       45             0 sed
+[120824.346431] [19606]  1000 19606    55622        1    77824       66             0 bash
+[120824.346605] [19616]  1000 19616    57592        0    94208       42             0 sed
+[120824.346775] [19679]  1000 19679    55622        1    77824       64             0 bash
+[120824.346955] [19688]  1000 19688    57592        0    86016       46             0 sed
+[120824.347124] [24664]  1000 24664    58653       34    86016      515             0 bash
+[120824.347292] [24813]  1000 24813    54296        0    61440       55             0 cat
+[120824.347511] [25523]  1000 25523    68573      107   155648       97             0 top
+[120824.347679] [25553]  1000 25553   653153   412978  4866048   184611             0 bash
+[120824.347849] Out of memory: Killed process 25553 (bash) total-vm:2612612kB, anon-rss:1651904kB, file-rss:8kB, shmem-rss:0kB, UID:1000
+[120824.444021] oom_reaper: reaped process 25553 (bash), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB
+[124162.420861] e1000: enp0s3 NIC Link is Down
+[124164.468922] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[129359.516744] grep invoked oom-killer: gfp_mask=0x6200ca(GFP_HIGHUSER_MOVABLE), nodemask=(null), order=0, oom_score_adj=0
+[129359.516994] grep cpuset=/ mems_allowed=0
+[129359.517118] CPU: 0 PID: 26191 Comm: grep Kdump: loaded Tainted: G                 ---------r-  - 4.18.0-193.el8.x86_64 #1
+[129359.517380] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[129359.517538] Call Trace:
+[129359.517698]  dump_stack+0x5c/0x80
+[129359.517849]  dump_header+0x6e/0x27a
+[129359.518009]  ? try_to_free_pages+0xe8/0x1c0
+[129359.518160]  oom_kill_process.cold.29+0xb/0x10
+[129359.518311]  out_of_memory+0x1ba/0x490
+[129359.518466]  __alloc_pages_slowpath+0xc18/0xd00
+[129359.518627]  __alloc_pages_nodemask+0x245/0x280
+[129359.518789]  filemap_fault+0x3d0/0x860
+[129359.518989]  ? alloc_set_pte+0x203/0x480
+[129359.519159]  ? filemap_map_pages+0x1ed/0x3b0
+[129359.519368]  ext4_filemap_fault+0x2c/0x40 [ext4]
+[129359.519546]  __do_fault+0x38/0xc0
+[129359.519724]  do_fault+0x191/0x3c0
+[129359.519916]  ? filename_lookup.part.63+0xe0/0x170
+[129359.520129]  __handle_mm_fault+0x441/0x6a0
+[129359.520446]  handle_mm_fault+0xda/0x200
+[129359.520639]  __do_page_fault+0x22d/0x4e0
+[129359.520868]  do_page_fault+0x32/0x110
+[129359.521065]  ? page_fault+0x8/0x30
+[129359.521263]  page_fault+0x1e/0x30
+[129359.521463] RIP: 0033:0x7f5cd90abde7
+[129359.521667] Code: ff 66 90 f3 0f 1e fa 66 0f 6e ce 89 f8 25 ff 0f 00 00 66 0f 60 c9 3d c0 0f 00 00 66 0f 61 c9 66 0f 70 c9 00 0f 8f 69 01 00 00 <f3> 0f 6f 07 66 0f ef db 66 0f 6f e0 66 0f 74 c1 66 0f 74 e3 66 0f
+[129359.522365] RSP: 002b:00007ffce6a62148 EFLAGS: 00010283
+[129359.522613] RAX: 00000000000001b1 RBX: 000055ebba2caa38 RCX: 00007ffce6a62180
+[129359.522882] RDX: 0000000000000000 RSI: 0000000000000024 RDI: 000055ebba0a31b1
+[129359.523145] RBP: 0000000000000000 R08: 0000000000000000 R09: 0000000000000007
+[129359.523411] R10: 00007ffce6a62180 R11: 0000000000000246 R12: 0001a7923d53f9c9
+[129359.523680] R13: 00007f5cd92b6150 R14: 000055ebba0a31b1 R15: 0000000000000000
+[129359.524003] Mem-Info:
+[129359.524256] active_anon:315767 inactive_anon:105482 isolated_anon:0
+                 active_file:23 inactive_file:1388 isolated_file:0
+                 unevictable:0 dirty:0 writeback:0 unstable:0
+                 slab_reclaimable:6193 slab_unreclaimable:12210
+                 mapped:10 shmem:8 pagetables:3705 bounce:0
+                 free:13034 free_pcp:17 free_cma:0
+[129359.525804] Node 0 active_anon:1263068kB inactive_anon:421928kB active_file:92kB inactive_file:5552kB unevictable:0kB isolated(anon):0kB isolated(file):0kB mapped:40kB dirty:0kB writeback:0kB shmem:32kB shmem_thp: 0kB shmem_pmdmapped: 0kB anon_thp: 131072kB writeback_tmp:0kB unstable:0kB all_unreclaimable? no
+[129359.526884] Node 0 DMA free:7480kB min:376kB low:468kB high:560kB active_anon:7860kB inactive_anon:0kB active_file:0kB inactive_file:0kB unevictable:0kB writepending:0kB present:15992kB managed:15360kB mlocked:0kB kernel_stack:0kB pagetables:16kB bounce:0kB free_pcp:0kB local_pcp:0kB free_cma:0kB
+[129359.528255] lowmem_reserve[]: 0 1778 1778 1778 1778
+[129359.528572] Node 0 DMA32 free:44656kB min:44676kB low:55844kB high:67012kB active_anon:1255208kB inactive_anon:421928kB active_file:92kB inactive_file:5552kB unevictable:0kB writepending:0kB present:2080704kB managed:1855540kB mlocked:0kB kernel_stack:2608kB pagetables:14804kB bounce:0kB free_pcp:68kB local_pcp:68kB free_cma:0kB
+[129359.530048] lowmem_reserve[]: 0 0 0 0 0
+[129359.530397] Node 0 DMA: 2*4kB (UM) 2*8kB (UM) 0*16kB 1*32kB (U) 2*64kB (UM) 1*128kB (U) 2*256kB (UM) 1*512kB (U) 0*1024kB 1*2048kB (M) 1*4096kB (M) = 7480kB
+[129359.531148] Node 0 DMA32: 142*4kB (UE) 131*8kB (UE) 120*16kB (UME) 85*32kB (UME) 26*64kB (UME) 13*128kB (UE) 3*256kB (ME) 1*512kB (M) 1*1024kB (M) 2*2048kB (UE) 7*4096kB (M) = 44656kB
+[129359.531972] Node 0 hugepages_total=0 hugepages_free=0 hugepages_surp=0 hugepages_size=2048kB
+[129359.532372] 9121 total pagecache pages
+[129359.532790] 7693 pages in swap cache
+[129359.533184] Swap cache stats: add 1225691, delete 1217998, find 15918/22141
+[129359.533596] Free swap  = 0kB
+[129359.533981] Total swap = 839676kB
+[129359.534389] 524174 pages RAM
+[129359.534812] 0 pages HighMem/MovableOnly
+[129359.535186] 56449 pages reserved
+[129359.535577] 0 pages hwpoisoned
+[129359.535949] [ pid ]   uid  tgid total_vm      rss pgtables_bytes swapents oom_score_adj name
+[129359.536339] [  648]     0   648    23498        8   253952      282             0 systemd-journal
+[129359.537115] [  674]     0   674    27308        1   221184      795         -1000 systemd-udevd
+[129359.537521] [  796]    32   796    16780        7   176128      172             0 rpcbind
+[129359.537910] [  799]     0   799    18908        3   159744      160         -1000 auditd
+[129359.538298] [  827]     0   827   115688        0   397312      503             0 ModemManager
+[129359.538756] [  828]     0   828     6592        1    94208      303             0 smartd
+[129359.539142] [  829]     0   829   105552        0   430080      492             0 sssd
+[129359.539539] [  830]    70   830    20686        7   159744      115             0 avahi-daemon
+[129359.539913] [  832]   998   832   406720        0   323584     1440             0 polkitd
+[129359.540278] [  833]    81   833    17718        1   172032      240          -900 dbus-daemon
+[129359.540654] [  835]   997   835     4718        7    69632       32             0 lsmd
+[129359.541003] [  841]     0   841     4352        8    69632       29             0 mcelog
+[129359.541520] [  842]   991   842    40057        0   196608      209             0 rngd
+[129359.541851] [  845]     0   845    77886        0   180224      170             0 gssproxy
+[129359.542173] [  846]    70   846    20655        0   147456      108             0 avahi-daemon
+[129359.542513] [  862]     0   862   107209       19   442368      634             0 sssd_be
+[129359.542828] [  863]     0   863   107777       19   454656      406             0 sssd_nss
+[129359.543132] [  866]     0   866   124680        0   471040     5501             0 firewalld
+[129359.543445] [  867]     0   867    23926        1   212992      672             0 systemd-logind
+[129359.543735] [  883]     0   883   169522       76   397312      580             0 NetworkManager
+[129359.544024] [  891]     0   891   158766      107   450560     3603             0 tuned
+[129359.544324] [  892]     0   892    23242        0   204800      231         -1000 sshd
+[129359.544599] [ 1114]     0  1114    61471        0   110592      249             0 crond
+[129359.544865] [ 1115]     0  1115    10656        0   110592       55             0 atd
+[129359.545120] [ 1416]  1000  1416    23463        1   225280      363             0 systemd
+[129359.545379] [ 1421]  1000  1421    61716        1   315392     1338             0 (sd-pam)
+[129359.545622] [ 3960]     0  3960    33689        0   278528      237             0 login
+[129359.545888] [ 3967]  1000  3967    65053        8   131072      696             0 bash
+[129359.546129] [ 4328]  1000  4328    76943        1   233472      224             0 crontab
+[129359.546411] [ 4330]  1000  4330    61007        0   110592      128             0 vi
+[129359.546647] [ 4420]  1000  4420    76943        1   225280      224             0 crontab
+[129359.546904] [ 4422]  1000  4422    61007        0   110592      128             0 vi
+[129359.547143] [ 4473]  1000  4473    76943        1   229376      224             0 crontab
+[129359.547392] [ 4475]  1000  4475    61007        0   106496      127             0 vi
+[129359.547632] [ 4536]  1000  4536    55622        0    69632       60             0 bash
+[129359.547884] [ 7077]  1000  7077    55622        0    77824       59             0 bash
+[129359.548176] [ 7219]  1000  7219    55622        0    81920       64             0 bash
+[129359.548427] [ 7251]  1000  7251    55622        0    81920       60             0 bash
+[129359.548668] [ 7290]  1000  7290    55622        0    77824       63             0 bash
+[129359.548897] [ 7488]  1000  7488    55622        0    77824       63             0 bash
+[129359.549110] [ 7500]  1000  7500    55622        0    73728       63             0 bash
+[129359.549311] [ 7837]  1000  7837    55622        0    73728       63             0 bash
+[129359.549507] [ 7913]  1000  7913    55622        0    65536       63             0 bash
+[129359.549719] [ 7926]  1000  7926    55622        0    81920       63             0 bash
+[129359.549910] [ 8046]  1000  8046    76944        1   221184      224             0 crontab
+[129359.550108] [ 8048]  1000  8048    61007        0   110592      127             0 vi
+[129359.550298] [ 8074]  1000  8074    55622        0    81920       63             0 bash
+[129359.550484] [ 8085]  1000  8085    76943        1   237568      224             0 crontab
+[129359.550688] [ 8087]  1000  8087    61007        0   110592      127             0 vi
+[129359.550875] [ 8447]  1000  8447    76942        0   225280      221             0 crontab
+[129359.551070] [ 8449]  1000  8449    76944        1   233472      225             0 crontab
+[129359.551256] [ 8451]  1000  8451    61007        0   102400      126             0 vi
+[129359.551438] [ 8457]  1000  8457    54264        0    65536       27             0 wc
+[129359.551638] [11713]     0 11713    33689        0   262144      234             0 login
+[129359.551822] [11714]     0 11714    33689        5   274432      236             0 login
+[129359.552001] [11715]     0 11715    56448        0    73728       28             0 agetty
+[129359.552190] [12071]  1000 12071    54271        0    65536       27             0 wc
+[129359.552367] [16158]  1000 16158    55475        0    77824       40             0 grep
+[129359.552559] [16165]  1000 16165    55475        0    73728       39             0 grep
+[129359.552734] [19588]  1000 19588    55622        1    77824       65             0 bash
+[129359.552907] [19598]  1000 19598    57592        0    94208       45             0 sed
+[129359.553087] [19606]  1000 19606    55622        1    77824       66             0 bash
+[129359.553259] [19616]  1000 19616    57592        0    94208       42             0 sed
+[129359.553427] [19679]  1000 19679    55622        1    77824       64             0 bash
+[129359.553611] [19688]  1000 19688    57592        0    86016       46             0 sed
+[129359.553779] [24664]  1000 24664    58653        0    86016      558             0 bash
+[129359.553944] [24813]  1000 24813    54296        0    61440       55             0 cat
+[129359.554119] [25621]  1000 25621    58654        5    90112      543             0 bash
+[129359.554284] [25970]  1000 25970    55622        1    69632       60             0 bash
+[129359.554447] [25971]  1000 25971    55622       34    73728       30             0 bash
+[129359.554625] [25972]  1000 25972   651371   413019  4857856   182788             0 bash
+[129359.554788] [26190]  1000 26190       90        1    40960        0             0 free
+[129359.554991] [26191]  1000 26191      126        1    45056        0             0 grep
+[129359.555158] [26192]  1000 26192    55622       34    65536       29             0 bash
+[129359.555389] Out of memory: Killed process 25972 (bash) total-vm:2605484kB, anon-rss:1652076kB, file-rss:0kB, shmem-rss:0kB, UID:1000
+[129359.647923] oom_reaper: reaped process 25972 (bash), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB
