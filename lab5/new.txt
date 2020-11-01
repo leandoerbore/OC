@@ -1,0 +1,1 @@
+[150374.818029] Out of memory: Killed process 129034 (bash) total-vm:2557440kB, anon-rss:1605600kB, file-rss:0kB, shmem-rss:0kB, UID:1000
